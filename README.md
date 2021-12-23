@@ -1,38 +1,34 @@
-EOS Explorer
+DCD Explorer
 ============================================
 
-### Инструкция по развертыванию:
+### Deployment instructions:
 
-Для начала необходимо склонировать репозиторий.
-Это можно сделать командой из консоли (командной строки):
+First, you need to clone the repository.
+This can be done with a command from the console (command line):
 
-``git clone https://bitbucket.org/graphenelab/explorer.git``
+``git clone git@github.com:GrapheneLab/DCD_explorer.git``
 
-если есть учетная запись:
-
-``git clone https://<имя аккаунта>@bitbucket.org/graphenelab/explorer.git``
-
-После исполнения команды у вас создастся папка с проектом, внутри которой нобходимо выполнить несколько команд:
+After executing the command, you will have a project folder, inside which you need to execute several commands:
 
 ``npm install``
 
-эта команда позволит скачать пакеты и установить все зависимости проекта (информацию для установки берет из файла package.json)
+this command will download packages and install all project dependencies (information for installation is taken from the package.json file)
 
 ``npm start``
 
-эта команда запустит сборку webpack (утилита для сборки проекта) и локальный dev сервер c https:// протоколом, доступный по адресу https://localhost:8080
+this command will run the webpack build (utility for building the project) and the local dev server with https:// protocol, available at https://localhost:8080
 
 ``npm run dev``
 
-эта команда запустит сборку webpack (утилита для сборки проекта) и локальный dev сервер, доступный по адресу http://localhost:8080
+this command will run the webpack build (utility for building the project) and the local dev server available at http://localhost:8080
 
-В целом, проект готов к работе.
-Необходимо зайти в браузер и перейти по ссылке, чтобы увидеть развернутый проект.
+In general, the project is ready to go.
+You need to go to the browser and follow the link to see the deployed project.
 
-### Возможные проблемы при установке:
+### Possible installation problems:
 
-* если команда `git clone` так же не прошла, требуется установить GIT, перейдя на официальный сайт и скачав последнюю актуальную версию.
+*if the `git clone` command also failed, you need to install GIT by going to the official site and downloading the latest up-to-date version.
 
-* если команда `npm install` не воспринимается командной строкой, значит на компьютере отсутствует предустановленная Node.js версии 8.11 stable, в которой так же поставляется и пакетный менеджер npm. Необходимо скачать дистрибутив и установить [Node.js](https://nodejs.org/en/download/), следуя указаниям установщика.
+*if the command `npm install` is not accepted by the command line, then the computer does not have Node.js version 8.11 stable preinstalled, in which the npm package manager is also supplied. You need to download the distribution kit and install [Node.js] (https://nodejs.org/en/download/) following the instructions of the installer.
 
-* во время исполнения команды `npm install` могут возникнуть ошибки, связанные с отсутствующим пакетом node-gyp, который необходим для обновления некоторых нужных проекту зависимостей и устранения проблем с совместимостью систем Unix. Для устранения требуется иметь на машине, на которой разворачивается проект, установленный [Python версии 2.7.14](https://www.python.org/downloads/)
+*during the execution of the `npm install` command, errors may occur related to the missing package node-gyp, which is required to update some dependencies necessary for the project and fix compatibility problems with Unix systems. To fix, you need to have [Python version 2.7.14] (https://www.python.org/downloads/) installed on the machine where the project is deployed

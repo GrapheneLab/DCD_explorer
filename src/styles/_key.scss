@@ -1,0 +1,38 @@
+.key{
+  &__ico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.2rem;
+    height: 5.2rem;
+    background-color: $card_ground;
+    border: 1px solid $card_border;
+    border-radius: 4px;
+    margin-right: 2rem;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+    flex: 1;
+    word-break: break-word;
+  }
+  &__title{
+    margin-bottom: 1rem;
+  }
+  &__value{}
+  @include breakpoint(sm){
+    &__ico{
+      //margin-right: 0;
+      //margin-bottom: 2rem;
+    }
+    &__info{
+      //align-items: center;
+      flex: 1;
+      align-items: flex-start;
+      word-break: break-all;
+    }
+  }
+}

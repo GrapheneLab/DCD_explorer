@@ -1,0 +1,111 @@
+.block-page{
+  .heading{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    &:not(:first-child){
+      margin-top: 4rem;
+    }
+    @include breakpoint(md) {
+      flex-direction: column;
+      align-items: flex-start;
+      &>span{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        .num{
+          margin-bottom: 4px;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+.trx__table{
+  td:first-child{
+    text-overflow: ellipsis;
+  }
+}
+
+.block{
+  &__main{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__id{
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+  }
+  &__info-wrapper{
+    @include breakpoint(md) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  &__info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    //padding: 2rem 3rem;
+    padding: 3rem;
+    @include breakpoint(md) {
+      border-right: none;
+      &:not(:last-child){
+        border-bottom: 1px solid $card_border;
+      }
+    }
+    .key__ico{
+      width: 4rem;
+      height: 4rem;
+      svg{
+        width: 60%;
+      }
+    }
+  }
+}
+
+.producer__card{
+  .personal{
+    &__info{
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem 3rem;
+      .avatar{
+        margin-right: 2rem;
+        svg{
+          width: 3rem;
+          height: 3rem;
+        }
+        path{
+          stroke: $text_danger;
+        }
+      }
+    }
+    &__key{
+      .key__info{
+        flex: 1;
+        white-space: pre-wrap;
+        word-break: break-all;
+        word-wrap: break-word;
+        span{
+          word-break: break-word;
+        }
+      }
+    }
+  }
+}
+
+.mroot{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 2rem 0 0;
+  word-break: break-all;
+}

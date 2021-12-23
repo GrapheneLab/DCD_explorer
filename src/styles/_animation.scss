@@ -1,0 +1,52 @@
+.content{
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  margin-bottom: 5rem;
+  transition: all 250ms ease-in;
+}
+
+//.fade {
+//  position: absolute;
+//  transform: translateX(0);
+//  opacity: 1;
+//  z-index: 100;
+//}
+//.fade-enter {
+//  opacity: 0.01;
+//  transform: translateX(-10%);
+//}
+//.fade-enter-active {
+//  position: relative;
+//  opacity: 1;
+//  transform: translateX(0%);
+//}
+//.fade-exit {
+//  position: relative;
+//  opacity: 1;
+//  transform: translateX(0%);
+//}
+//.fade-exit-active {
+//  opacity: 0;
+//  transform: translateX(-10%);
+//}
+
+.fade-in-left{
+  position: relative;
+  /***удаление свойства трансформ для исключения проблем с вложенным позиционированием элементов через position: fixed***/
+  //transform: translate(0,0);
+  left: 0;
+  opacity: 1;
+  transition: all $anim;
+  overflow: unset;
+  &--out{
+    transform: scale(0.98);
+    opacity: 0;
+    transition: all $anim;
+  }
+  &--in{
+    //transform: translate(-50px, 0);
+    left: -10px;
+    opacity: 0;
+  }
+}

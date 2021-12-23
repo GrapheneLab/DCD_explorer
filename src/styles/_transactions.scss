@@ -1,0 +1,85 @@
+.transactions{
+  &__container{
+    align-items: stretch;
+    .accounts__header{
+      &:not(:first-child){
+        margin-top: 4rem;
+      }
+    }
+  }
+  &__card{
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+  }
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 9rem;
+    padding: 2rem 3rem;
+    margin: 0;
+    border-bottom: 1px solid $card_border;
+  }
+  &__chart{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+  }
+  &__refresh{
+    padding: 1rem 2rem;
+    background: $card_ground;
+    border: 1px solid $card_border;
+    border-radius: 2rem;
+    color: $light;
+    font-size: 1.3rem;
+    transition: $anim/2;
+    &:hover{
+      cursor: pointer;
+      border-color: $accent2;
+    }
+  }
+  @include breakpoint(md){
+    &__header{
+      height: auto;
+    }
+  }
+}
+
+.activity{
+  &__props{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 3rem;
+    background-color: $card_ground;
+    &:not(:last-child){
+      border-bottom: 1px solid $card_border;
+    }
+  }
+  &__heading{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-transform: uppercase;
+    .num{
+      color: $accent2;
+      font-size: 3rem;
+    }
+  }
+  &__desc{
+    font-size: 1.3rem;
+  }
+  @include breakpoint(md){
+    &__heading {
+      margin: 0;
+    }
+  }
+  @include breakpoint(sm){
+    &__heading {
+      margin-bottom: 1rem;
+    }
+  };
+}

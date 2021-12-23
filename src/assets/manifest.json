@@ -1,0 +1,21 @@
+{
+  "short_name": "EOS-explorer",
+  "name": "EOS Explorer by BLCKCHND",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#352F54",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#352F54"
+}

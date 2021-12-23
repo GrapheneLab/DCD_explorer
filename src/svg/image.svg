@@ -1,0 +1,19 @@
+<svg width="216" height="216" viewBox="0 0 216 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M188.881 0H23.6102C10.5706 0 0 10.5706 0 23.6102V188.881C0 201.921 10.5706 212.492 23.6102 212.492H188.881C201.921 212.492 212.492 201.921 212.492 188.881V23.6102C212.492 10.5706 201.921 0 188.881 0Z" transform="translate(1.82617 1.85083)" stroke="url(#img_grd_0)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17.7076 35.4153C27.4873 35.4153 35.4153 27.4873 35.4153 17.7076C35.4153 7.92797 27.4873 0 17.7076 0C7.92797 0 0 7.92797 0 17.7076C0 27.4873 7.92797 35.4153 17.7076 35.4153Z" transform="translate(49.0461 49.0713)" stroke="url(#img_grd_1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M188.881 59.0254L129.856 0L0 129.856" transform="translate(25.436 84.4866)" stroke="url(#img_grd_2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <defs>
+        <linearGradient id="img_grd_0" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80.3353 253.375) scale(217.518) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="img_grd_1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13.3892 42.2292) scale(36.253) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="img_grd_2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(71.4092 154.84) scale(193.349 132.928) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+    </defs>
+</svg>

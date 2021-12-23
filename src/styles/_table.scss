@@ -1,0 +1,339 @@
+.table {
+  width: 100%;
+  //padding: 0 1rem;
+  //border-collapse: collapse;
+  border-spacing: 0 0.5rem;
+  tr {
+    td:first-child {
+      padding-left: 2rem;
+    }
+    th {
+      text-align: left;
+      &:first-child {
+        padding-left: 2rem;
+      }
+    }
+    th, td {
+      padding: 1.3rem 2rem 1.3rem 0;
+      white-space: nowrap;
+      vertical-align: middle;
+      .checkbox{
+        margin: 0;
+        height: 2rem;
+      }
+      div{
+        white-space: normal;
+      }
+    }
+  }
+  &__wrapper {
+    width: 100%;
+    margin: 0 1rem 3rem;
+  }
+  &__item {
+    //position: relative;
+    background-color: $card_ground;
+    transition: $anim;
+    //transform: scaleY(1) translateY(0);
+    &--disabled{
+      visibility: collapse;
+      transform: scaleY(0) translateY(-100%);
+      @supports (-webkit-overflow-scrolling: touch) {
+        display: none;
+      }
+    }
+    td {
+      border-style: solid;
+      border-color: $card_border;
+      border-width: 1px 0 1px 0;
+      vertical-align: top;
+      &:first-child {
+        border-left-width: 1px;
+        border-radius: 2px 0 0 2px;
+      }
+      &:last-child {
+        border-right-width: 1px;
+        border-radius: 0 2px 2px 0;
+      }
+      .dropdown{
+        height: auto;
+        &__title{
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  &--contracts {
+    td {
+      max-width: 300px;
+      min-width: 10%;
+      //padding: 0 3rem;
+      width: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      box-sizing: border-box;
+      color: $text_title;
+    }
+    tbody td:first-child {
+      color: $light;
+    }
+  }
+  &--empty {
+    width: 100%;
+    margin: 0 1rem;
+  }
+  &--transfers {
+    td:last-child {
+      white-space: unset;
+    }
+  }
+}
+
+.history-table {
+  color: $text_title;
+  td {
+    &:first-child {
+      color: $light;
+    }
+    &:last-child {
+      width: 40%;
+      //line-height: 1.5;
+      padding-right: 2rem;
+      white-space: pre-wrap;
+    }
+  }
+  &__description {
+    line-height: 1.3;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-break: break-word;
+    font-size: 1.2rem;
+    span, a, b, p {
+      font-size: 1.3rem;
+    }
+    .link--ghost {
+      margin-right: 0.3rem;
+    }
+  }
+  &__pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+.producers-table {
+  td {
+    vertical-align: middle;
+  }
+  .text--success {
+    display: flex;
+    align-items: center;
+  }
+  .avatar {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.5rem;
+    padding: 0;
+    > svg, > img {
+      width: 100%;
+      height: 100%;
+    }
+    > svg{
+      padding: 0.8rem;
+    }
+    > img{
+      object-fit: contain;
+    }
+  }
+  &.disabled {
+    .table__item {
+      box-shadow: inset 0 0 10px $card_disabled;
+      td {
+        border-color: $card_disabled;
+      }
+    }
+  }
+}
+
+.accounts-table {
+  td:last-child {
+    width: 40%;
+    .wrap {
+      word-break: unset;
+    }
+  }
+  @include breakpoint(md){
+    .wrap{
+      max-width: 500px;
+    }
+  }
+}
+
+.fixed-cell {
+  &.table__wrapper {
+    position: relative;
+    overflow-x: hidden;
+    .table {
+      padding-left: 0;
+      thead > tr > td {
+        background-color: transparent !important;
+        border: none !important;
+      }
+      tr {
+        //position: relative;
+        & > th, & > td {
+          padding: 1.7rem 1rem 1rem;
+        }
+        & > th:first-child, & > td:first-child {
+          position: absolute;
+          top: auto;
+          left: 0;
+          z-index: 1;
+          padding: 1rem;
+          display: flex;
+          align-items: center;
+          min-height: 5rem;
+          max-width: 150px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          background-color: rgb(41, 37, 93); //need opaque color
+          border: 1px solid $card_border;
+          border-radius: 2px;
+          a, span {
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+    .table__item {
+      td:not(:first-child) {
+        padding-left: 1rem;
+      }
+    }
+    .table__inner {
+      overflow-x: auto;
+    }
+  }
+  .history-table__description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    //word-break: normal;
+    width: 400px !important;
+    span, a, b, p {
+      &:not(:first-child) {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+}
+
+.table-filter{
+  $this: &;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 1rem;
+  padding: 0;
+  box-sizing: border-box;
+  background: $card_ground;
+  border: 0 solid $card_border;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  @include transition;
+  .row{
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+  }
+  &__section{
+    width: 100%;
+    padding: 0 2rem 0;
+    &:not(:last-child){
+      border-bottom: 1px solid $card_border;
+      margin-bottom: 2rem;
+    }
+  }
+  &__group{
+    display: flex;
+    align-items: center;
+    .input{
+      width: 6rem;
+    }
+  }
+  &__btn-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    button{
+      padding: 1rem 2rem;
+      background: $card_ground;
+      border: 1px solid $card_border;
+      color: $light;
+      border-radius: 2rem;
+      &:hover{
+        cursor: pointer;
+      }
+      &:active, &:focus{
+        outline: 0;
+      }
+      &:not(:last-child){
+        margin-right: 2.5rem;
+      }
+    }
+  }
+  &--open{
+    max-height: inherit;
+    overflow: unset;
+    //padding: 0.1rem 0;
+    border-width: 1px;
+  }
+}
+
+.table-sort{
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 1rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  opacity: 0.2;
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus, &:active{
+    outline: 0;
+  }
+  span{
+    display: block;
+    width: 1.3rem;
+    height: 2px;
+    background: $text_title;
+    transition: all 0.3s;
+    &:nth-child(2){
+      margin: .3rem 0;
+      width: 0.8rem;
+    }
+    &:nth-child(3){
+      width: 0.3rem;
+    }
+  }
+  &--active{
+    opacity: 1;
+  }
+  &--cba{
+    span {
+      &:nth-child(1) {
+        width: 0.3rem;
+      }
+      &:nth-child(3) {
+        width: 1.3rem;
+      }
+    }
+  }
+}

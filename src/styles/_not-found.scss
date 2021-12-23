@@ -1,0 +1,62 @@
+.not-found{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @include breakpoint(md){
+    padding: 0 2rem;
+  }
+  &:before{
+    content: '404';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50rem;
+    letter-spacing: -5%;
+    color: rgba(12, 7, 60, 0.2);
+    transform: translate(-50%, -50%);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    z-index: -1;
+  }
+  .logo__link{
+    margin-bottom: 95px;
+    @include breakpoint(md){
+      margin: 2rem 0 auto;
+    }
+  }
+  &__title{
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    font-size: 7.2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#38B8F2, #843CF7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @include breakpoint(md){
+      font-size: 3.6rem;
+      text-align: center;
+    }
+  }
+  &__subtitle{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+    @include breakpoint(md){
+      font-size: 1.4rem;
+    }
+  }
+  .btn--gradient{
+    margin-top: 10rem;
+    @include breakpoint(md){
+      margin: auto 0 2rem;
+    }
+  }
+}

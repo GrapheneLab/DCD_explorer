@@ -1,0 +1,79 @@
+$primary-font: Futura, sans-serif;;
+$secondary-font: 'Oswald';
+
+$light: #E3E3FE;
+$light_op: rgba(227, 227, 254, 0.31);
+$dark: #000000;
+
+$ground: #352F54;
+$card_ground: rgba(72, 86, 135, 0.09);
+$card_ground_opaque: rgba(72, 86, 135, 0.18);
+$card_border: rgba(255, 255, 255, 0.03);
+$card_disabled: rgba(225, 18, 65, 0.2);
+$card_success: rgba(127, 244, 202, 0.3);
+$scale_ground: rgba(255, 255, 255, 0.05);
+$sidebar_ground: rgba(0, 0, 0, 0.08);
+$sidebar_open: rgba(0, 0, 0, 0.2);
+$overlay_bg: rgba(18, 11, 57, 0.81);
+$btn: #6076EC;
+
+//$text_title: #787CB2;
+$text_title: #9298ea;
+$text_accent: #78F6FA;
+$text_success: #7FF4CA;
+$text_danger: rgb(244, 70, 110);
+
+$dark_ground: #221652;
+
+$grd_main: linear-gradient(to right, #6076EC, #79FAFA);
+$grd_accent: linear-gradient(to right, #EC6080, #FADA79);
+$grd_ground: linear-gradient(135.62deg, #221652 14.45%, #190D52 42.41%, #0B0739 85.55%);
+$grd_layout: linear-gradient(147.95deg, rgba(60, 64, 148, 0.08) 45.5%, rgba(35, 38, 73, 0) 71.95%);
+
+$accent1: #F3997D;
+$accent2: #76F3FD;
+
+$accent2_op: rgba(118, 243, 253, 0.5);
+$accent1_op: rgba(243, 153, 125, 0.5);
+
+/*action color*/
+$action1: #60aaec;
+
+
+$shadow: rgba(0, 0, 0, 0.12);
+$overlay_shadow: rgba(0, 0, 0, 0.2);
+$accent1_shadow: rgba(232, 166, 136, 0.11);
+$accent2_shadow: rgba(83, 163, 249, 0.09);
+
+$anim: 0.3s;
+
+@mixin transition($speed: 0.3s){
+  transition: all $speed;
+}
+
+@mixin textGradient($grd, $placeholder){
+  color: $placeholder;
+  @supports not (-webkit-overflow-scrolling: touch) {
+    background-image: $grd;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}
+
+%kill-btn{
+  background-color: transparent;
+  font-family: $primary-font;
+  border: 0;
+  cursor: pointer;
+  &:active, &:focus{
+    outline: 0;
+  }
+}
+
+%kill-link{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,141 @@
+.api{
+  margin: 0 auto;
+  &__section-title{
+    font-size: 3.6rem;
+    margin: 0 0 5rem 0;
+  }
+  & > .row{
+    margin-top: 7rem;
+    align-items: flex-start;
+  }
+  &__block-title{
+    font-size: 2.4rem;
+    margin-bottom: 3.6rem;
+    margin-top: 0;
+  }
+  &__menu-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 3.5rem;
+    background-color: $card_ground;
+    border: 1px solid $card_border;
+    border-radius: 4px;
+  }
+  &__menu-item{
+    @extend %kill-link;
+    color: $text_title;
+    &.active{
+      color: $light;
+    }
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+  }
+  &__content-wrapper{}
+  &__content-block{
+    margin-bottom: 4.5rem;
+  }
+  &__text{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+  }
+  &__code-block, &__picture-block{
+    padding: 3.5rem;
+    background-color: $card_ground;
+    border: 1px solid $card_border;
+  }
+  &__code-block{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 4.5rem;
+  }
+  &__picture-block{
+    display: flex;
+    justify-content: center;
+  }
+  &__code{
+    color: $accent2;
+  }
+  .link--hyperlink{
+    font-size: 1.8rem;
+  }
+  @include breakpoint(lg){
+    &__content-wrapper{
+      margin-right: 40px;
+    }
+  }
+  @include breakpoint(md){
+    margin: 0 40px 0 20px;
+    &__menu-wrapper{
+      margin-bottom: 8rem;
+    }
+    &__content-wrapper{
+      margin-right: 0;
+    }
+  }
+  @include breakpoint(sm){
+    margin: 0 auto;
+    &__menu-wrapper{
+      margin: 0 1rem 8rem;
+    }
+  }
+}
+
+.code{
+  &__block{
+    position: relative;
+    display: block;
+    margin-left: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    div{
+      height: auto;
+      margin-left: 2rem;
+      overflow: hidden;
+    }
+    button{
+      display: flex;
+      align-items: center;
+      margin-left: 0.5rem;
+      background-color: transparent;
+      border: none;
+      height: 2rem;
+      line-height: 2rem;
+      &:after{
+        content: '\2023';
+        width: 1rem;
+        height: 1rem;
+        margin-left: 0.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(-90deg);
+        transition: $anim;
+      }
+    }
+    &.hide{
+      div{
+        height: 0;
+      }
+      button{
+        color: $text_success;
+        &:after{
+          transform: rotate(90deg);
+        }
+      }
+    }
+    &:before, &:after{
+      position: relative;
+      left: 0;
+      display: inline-block;
+      height: 2rem;
+    }
+    &:before{
+      content: '{'
+    }
+    &:after{
+      content: '}'
+    }
+  }
+}

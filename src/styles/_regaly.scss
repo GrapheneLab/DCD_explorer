@@ -1,0 +1,33 @@
+.regaly{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.2rem;
+  width: 4.2rem;
+  border-radius: 50%;
+  background-color: $card_ground;
+  border: 1px solid $card_border;
+  &:not(:last-child){
+    margin-right: 1rem;
+  }
+  svg, img{
+    width: 80%;
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    color: $text_title;
+    path{
+      stroke: $text_title;
+    }
+  }
+  &__wrapper{
+    display: flex;
+    > div:not(:last-child),
+    > button:not(:last-child){
+      margin-right: 1rem;
+    }
+    @include breakpoint(md){
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}

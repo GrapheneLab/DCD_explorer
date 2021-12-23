@@ -1,0 +1,87 @@
+.footer{
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding: 2rem !important;
+  border-top: 1px solid $card_border;
+  @include breakpoint(md){
+    flex-direction: column;
+  }
+}
+
+.copyright{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  .title:not(:last-child){
+    margin-bottom: 1rem;
+    white-space: pre;
+    @include breakpoint(md) {
+      white-space: pre-wrap;
+    }
+  }
+  .title:last-child{
+    text-transform: none;
+  }
+
+}
+
+.social{
+  display: flex;
+  &__link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    color: $text_title;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2.5rem;
+    background-image: linear-gradient(-45deg, #843cf7 2%, #38B8F2 20%, $card_ground, $card_ground);
+    background-size: 500%;
+    background-position: 1% 0;
+    border: 1px solid $card_border;
+    transition: $anim;
+    &:not(:last-child){
+      margin-right: 2rem;
+    }
+    svg{
+      height: 1.5rem;
+      path{
+        fill: url(#btn-grd);
+      }
+    }
+    span{
+      margin-left: 1rem;
+      font-size: 1.2rem;
+    }
+    &:hover, &:focus{
+      background-position: 99% 0;
+      color: $light;
+      svg path{
+        fill: $light;
+      }
+    }
+  }
+  @include breakpoint(sm){
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__link{
+      margin-bottom: 2rem;
+      &:not(:last-child){
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.provided{
+  .link--ghost{
+    &:not(:last-child){
+      margin-right: 0.5rem;
+    }
+  }
+}

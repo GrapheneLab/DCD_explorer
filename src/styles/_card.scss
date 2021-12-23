@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $card_ground;
+  padding: 2.2rem 2.7rem;
+  border: 1px solid $card_border;
+  border-radius: 4px;
+  color: $light;
+}
+
+.card--totals{
+  align-items: center;
+  padding: 2rem;
+  .card{
+    &__ico-wrapper{
+      display: flex;
+      width: 60px;
+      height: 60px;
+      margin-right: 2rem;
+      background: rgba(72,86,135,.09);
+      border: 1px solid hsla(0,0%,100%,.03);
+      border-radius: 10px;
+      svg{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: auto;
+      }
+      path{
+        stroke: $accent2;
+      }
+    }
+    &__info-wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+    &__num{
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+  .fill path{
+    fill: $accent2;
+  }
+}

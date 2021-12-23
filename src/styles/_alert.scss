@@ -1,0 +1,48 @@
+.alert{
+
+  $alertWidth: 30rem;
+
+  height: auto;
+  position: fixed;
+  z-index: 150;
+  bottom: -10rem;
+  left: -120%;
+  width: $alertWidth;
+  max-width: calc(100% - 2rem);
+  background: $ground;
+  border-radius: 4px;
+  font-size: 0;
+  transform: scale(0);
+  @include transition;
+  &--show{
+    bottom: 2rem;
+    left: 2rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+    border: 1px solid $card_border;
+    transform: scale(1);
+    &.min{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      width: 3rem;
+      height: 3rem;
+      padding: 0;
+      background-color: $text_danger;
+      font-size: 0;
+      &:after{
+        content: '!';
+        font-size: 2rem;
+      }
+    }
+    @include breakpoint(sm){
+      right: 1rem;
+      left: 1rem;
+      bottom: 1rem;
+      &.min{
+        z-index: 90;
+      }
+    }
+  }
+}

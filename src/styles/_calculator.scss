@@ -1,0 +1,126 @@
+.calculator{
+  flex-direction: column;
+  padding: 2rem;
+  .heading{
+    margin-bottom: 10rem;
+  }
+  &__prices-wrapper{
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+}
+
+.price-item{
+  &__title{
+    color: $text_title;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 2.7rem;
+  }
+  &__card-top, &__card-bottom{
+    width: 100%;
+    padding: 2rem;
+  }
+  &__card-top{
+    display: flex;
+    align-items: center;
+  }
+  &__icon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    background: $card_ground;
+    border: 1px solid $card_border;
+    border-radius: 10px;
+    svg{
+      margin: auto;
+      width: 5rem;
+    }
+  }
+  &__info{
+    margin-left: 3.5rem;
+    color: $text_title;
+    font-family: 'Noto Sans', sans-serif;
+    & > div:not(:last-child){
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__card-bottom{
+    background: $card_ground_opaque;
+    text-align: center;
+    color: $text_title;
+  }
+  .card{
+    padding: 0;
+  }
+  @include breakpoint(lg){
+    margin-bottom: 4rem;
+  }
+}
+
+.calc-item{
+  background: $card_ground;
+  border: 1px solid $card_border;
+  &__top, &__bottom{
+    padding: 2.5rem 7rem 3.8rem;
+  }
+  &__top{
+    background: $card_ground;
+    border-bottom: 1px solid $card_border;
+  }
+  &__bottom{
+    .heading{
+      color: $text_title;
+    }
+  }
+  .heading{
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 4rem;
+  }
+  &__inputs-wrapper{}
+  &__input{
+    display: flex;
+    align-items: center;
+    &:not(:last-child){
+      padding-bottom: 2.5rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid $card_border;
+    }
+  }
+  .dropdown{
+    min-width: 9.3rem;
+    margin: 0 1rem;
+  }
+  &__input-comment{
+    color: $text_title;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &__result{
+    display: block;
+    min-width: 16.4rem;
+  }
+  @include breakpoint(lg){
+    margin-bottom: 4rem;
+  }
+  @include breakpoint(sm){
+    &__input{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .heading{
+      display: block;
+      text-align: center;
+    }
+    .input__field{
+      text-align: center;
+    }
+    .dropdown{
+      margin: 2rem 3rem;
+    }
+    &__result{
+      text-align: center;
+    }
+  }
+}

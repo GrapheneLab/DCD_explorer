@@ -1,0 +1,24 @@
+.switch-value{
+  width: 100%;
+  position: relative;
+  &__btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    background: $card_ground;
+    border: 1px solid $card_border;
+    padding: 0.7rem 1rem;
+    @include transition;
+    &:hover{
+      cursor: pointer;
+    }
+    &:active, &:focus{
+      outline: none;
+    }
+    svg{
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

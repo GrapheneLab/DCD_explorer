@@ -1,0 +1,89 @@
+.search{
+  @include breakpoint(md){
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__field{
+    padding-left: 6rem;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    color: $light;
+    &:hover, &:focus, &:active{
+      border-bottom: 1px solid #787cb2;
+    }
+    @include breakpoint(sm){
+      padding-left: 1rem;
+    }
+  }
+  &__ico{
+    margin-right: 3rem;
+    @include breakpoint(sm){
+      position: static;
+      margin: 0;
+    }
+  }
+  &__label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &--local{
+    .search__label{
+      width: 4rem;
+    }
+    .search__field{
+      padding-left: 1rem;
+      border-radius: 0;
+      &:hover, &:focus, &:active{
+        border-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.mobile__active{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 3rem;
+  background-image: $grd_ground;
+  .search{
+    &__field{
+      width: 100%;
+      margin-right: 4rem;
+      padding-left: 2rem;
+      height: 5rem;
+      border: 1px solid $card_border;
+      background-color: $card_ground;
+      border-radius: 4px;
+    }
+  }
+  .btn--close{
+    top: 2.5rem;
+    right: 1rem;
+  }
+  .hints--active{
+    position: static;
+    margin-bottom: auto;
+    height: 100%;
+    min-width: 100%;
+    padding: 4rem 0 3rem;
+    background-color: transparent;
+  }
+}

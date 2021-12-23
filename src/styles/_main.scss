@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Noto Sans';
+  font-display: auto;
+}
+
+html, body{
+  margin: 0;
+  font-size: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: $grd_layout fixed;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  background: $grd_ground fixed;
+  color: $light;
+}
+
+nav{
+  width: 100%;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-left: 10rem;
+  overflow: hidden;
+  //mix-blend-mode: lighten;
+  transition: $anim;
+  will-change: padding-left;
+  &>div, &>section{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 2rem 0 !important;
+    //margin: 0 auto !important;
+    overflow-x: hidden;
+  }
+  @include breakpoint(md){
+    padding-left: 0;
+    &>div, &>section{
+      padding-top: 8rem !important;
+    }
+  }
+  @media only screen
+  and (max-width: 900px)
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation: landscape) {
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+div.custom-scroll {
+  ::-moz-scrollbar,
+  ::-webkit-scrollbar {
+    width: 5px;
+    &-track {
+      background: $card_ground;
+    }
+    &-thumb {
+      background-image: $grd_accent;
+      &:hover{
+
+      }
+    }
+  }
+}
+
+.open-overlay, .open-sidebar {
+  main{
+    padding-left: 27rem;
+    //transform: translateX(27rem);
+    @include breakpoint(lg){
+      padding-left: 10rem;
+    }
+    @include breakpoint(md){
+      padding-left: 0;
+    }
+  }
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.svg-gradient{
+  position: absolute;
+  top: -100%;
+}

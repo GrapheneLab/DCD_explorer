@@ -1,0 +1,22 @@
+.avatar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 4px;
+  background: $card_ground;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  &--hash{
+    padding: 1rem;
+  }
+  &--blank{
+    background-image: $grd_main;
+  }
+}

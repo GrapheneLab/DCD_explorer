@@ -1,0 +1,46 @@
+.tabs-titles{
+  &__item{
+    @extend %kill-btn;
+    @include transition;
+    color: $text_title;
+    padding-left: 1.5rem;
+    padding-right: 0;
+    &:not(:last-child){
+      padding-right: 1.5rem;
+      border-right: 1px solid $text_title;
+    }
+    &--selected{
+      color: $light;
+    }
+    &:hover{
+      color: $light;
+    }
+  }
+}
+
+.tabs-content{
+  .table__wrapper{
+    margin: 0;
+  }
+  .table--empty{
+    margin: 0;
+  }
+}
+
+.tabs{
+  &--voting{
+    margin: 0 0 2rem !important;
+    .tabs-titles__item{
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      &:first-child{
+        padding-left: 0;
+      }
+    }
+  }
+  &--voting_content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+}

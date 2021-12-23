@@ -1,0 +1,1 @@
+export const setNode = (data) => async (dispatch) => dispatch({type: 'SET_NODE', data});

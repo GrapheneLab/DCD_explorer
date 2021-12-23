@@ -1,0 +1,86 @@
+.header{
+  position: relative;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  color: $light;
+  @include breakpoint(md){
+    position: fixed;
+    z-index: 100;
+    height: 6rem;
+    padding: 0;
+    background-color: $dark_ground;
+    box-shadow: 0 0 10px $overlay_shadow;
+    .burger{
+      position: relative;
+      top: 0;
+      height: 6rem;
+      width: 6rem;
+      padding: 2rem;
+      margin-right: 2rem;
+      background-color: transparent;
+    }
+  }
+  &__blckchnd{
+    display: flex;
+    align-items: center;
+    @include breakpoint(md){
+      margin: auto;
+    }
+  }
+  &__right-menu{
+    display: flex;
+    align-items: center;
+    .dropdown{
+      margin-left: 2rem;
+    }
+  }
+}
+
+.logo{
+  &__link{
+    display: flex;
+    align-items: center;
+    margin-right: 6rem;
+    color: $light;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  &__title{
+    display: inline-flex;
+    flex-direction: column;
+  }
+  &__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.5rem;
+    width: 5.5rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+    border: 1px solid $card_border;
+    background-color: $card_ground;
+    @include breakpoint(md){
+      width: 4rem;
+      height: 4rem;
+    }
+    img{
+      height: 100%;
+    }
+  }
+  &__svg{
+    width: 100%;
+  }
+}
+
+@include breakpoint(lg){
+  .dropdown__list{
+    left: -7rem;
+  }
+}

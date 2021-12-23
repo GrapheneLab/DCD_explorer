@@ -1,0 +1,587 @@
+{
+  "account": {
+    "accountHistory": "Konto-Historie",
+    "available": "Available: %(param)s",
+    "avatar": "Avatar",
+    "balance": "Total Balance",
+    "countVoteProducer": "Votes Number %(count)s",
+    "createdBy": "Created by",
+    "createdTime": "Creation Date",
+    "decay": "Vote decay:",
+    "delegated": "Delegated %(param)s",
+    "delegatedFrom": "Delegated to me: %(number)s %(symbol)s",
+    "delegatedTo": "Delegated by me: %(number)s %(symbol)s",
+    "lastClaimTime": "\n(Last Claimed: %(lastClaimTime)s)",
+    "limit": "Limit: %(param)s",
+    "liquid": "Liquid",
+    "maxWeight": "Max Weight",
+    "none": "Noone",
+    "permission": "Permissions",
+    "proxyCount": "Users Proxying to This Account:",
+    "proxySet": "Proxied To:",
+    "proxyWeightEOS": "Effective Proxy vote weight (EOS):",
+    "proxyWeightTotal": "Total Proxy vote weight (EOS):",
+    "refund": "Refunding %(timer)s",
+    "regaly": {
+      "contract": "Contract",
+      "producer": "Producer",
+      "proxy": "Proxy"
+    },
+    "resource": "Resources",
+    "reward": "Total Rewards Claimed",
+    "selfDelegated": "Self Delegated: %(number)s %(symbol)s",
+    "showKeys": "Show keys",
+    "site": "Official website",
+    "staked": "Staked",
+    "threshold": "Threshold: %(threshold)s",
+    "title": "Account info",
+    "unpaid": "Unclaimed Rewards %(date)s",
+    "used": "Used: %(param)s",
+    "tokens": "Tokens",
+    "vote": "Voting",
+    "voteFor": "Vote For",
+    "voteWeight": "Last Vote Weight:",
+    "voteWeightEOS": "Effective vote weight (EOS):",
+    "voteWeightTotal": "Total vote weight (EOS):",
+    "weight": "Weight: %(weight)s %(symbol)s",
+    "emptyVoting": {
+      "title": "This account has not voted for anyone yet",
+      "message": "If you own this account, consider voting %(link)s",
+      "link": "here"
+    }
+  },
+  "accounts": {
+    "hintDesc": "To filter users list press \"Enter\". Or maybe you search one of these users: ",
+    "search": "Account search",
+    "title": "Accounts"
+  },
+  "actionsList": {
+    "approve": {
+      "title": "Approve"
+    },
+    "bidname": {
+      "text": "%(bidder)s made a bid %(bid)s for name %(newname)s",
+      "title": "Bid Name"
+    },
+    "buyram": {
+      "text": "%(from)s delegated to the account %(to)s %(summ)s",
+      "title": "Delegate RAM"
+    },
+    "buyrambytes": {
+      "text": "%(from)s bought %(bytes)s bytes RAM for %(to)s",
+      "title": "Buy RAM Bytes"
+    },
+    "cancel": {
+      "title": "Cancel"
+    },
+    "claimrewards": {
+      "text": "Producer rewards for %(owner)s",
+      "title": "Claim Rewards"
+    },
+    "custom": {
+      "title": "Custom"
+    },
+    "delegatebw": {
+      "text": "%(from)s delegated to the account %(to)s %(netSumm)s for NET, and %(cpuSumm)s for CPU",
+      "title": "Delegate"
+    },
+    "deleteauth": {
+      "text": "account %(account)s deleted, permission: %(permission)s",
+      "title": "Delete Auth"
+    },
+    "exec": {
+      "title": "Exec"
+    },
+    "issue": {
+      "text": "%(to)s %(quantity)s %(memo)s",
+      "title": "Issue"
+    },
+    "linkauth": {
+      "title": "Link Auth"
+    },
+    "newaccount": {
+      "text": "%(creator)s created New Account %(name)s",
+      "title": "New account"
+    },
+    "propose": {
+      "title": "Propose"
+    },
+    "receive": {
+      "text": "%(from)s > %(to)s %(summ)s %(memo)s",
+      "title": "Receive"
+    },
+    "refund": {
+      "text": "Unstaked to %(owner)s",
+      "title": "Unstaked"
+    },
+    "regproducer": {
+      "text": "User register producer %(producer)s",
+      "title": "Register producer"
+    },
+    "regproxy": {
+      "text": "User registered proxy %(proxy)s",
+      "title": "Proxy registration"
+    },
+    "sellram": {
+      "text": "%(account)s sold %(bytes)s bytes RAM",
+      "title": "Sell RAM"
+    },
+    "sent": {
+      "text": "%(from)s > %(to)s %(summ)s %(memo)s",
+      "title": "Sent"
+    },
+    "transfer": {
+      "text": "%(from)s > %(to)s %(summ)s %(memo)s",
+      "title": "Transfer"
+    },
+    "unapprove": {
+      "title": "Unapprove"
+    },
+    "undelegatebw": {
+      "text": "%(from)s undelegated from the account %(to)s %(netSumm)s for NET, and %(cpuSumm)s for CPU",
+      "title": "Undelegate"
+    },
+    "unlinkauth": {
+      "text": "account: %(account)s, code: %(code)s, type: %(type)s",
+      "title": "Unlink Auth"
+    },
+    "unregprod": {
+      "text": "User deleted producer %(producer)s",
+      "title": "Delete producer"
+    },
+    "updateauth": {
+      "title": "Update Auth"
+    },
+    "voteproducer": {
+      "empty": "%(voter)s doesn't vote for producers / proxy anymore",
+      "proxy": "%(voter)s proxied their vote to %(proxy)s",
+      "text": "%(voter)s voted for block producers %(producersList)s",
+      "title": "Vote"
+    }
+  },
+  "alert": {
+    "backendError": "We are experiencing backend troubles. Explorer may display outdated information."
+  },
+  "api": {
+    "title": "API"
+  },
+  "bids": {
+    "emptyTable": "There is no names at auction right now",
+    "hintDesc": "To filter list and see all info press \"Enter\". We found some names that you maybe looking for: ",
+    "search": "Name search",
+    "title": "Name Auction"
+  },
+  "blockPage": {
+    "actions": "Actions: ",
+    "created": "Timestamp: ",
+    "producedBy": "Produced By: ",
+    "title": "Block %(num)s",
+    "trx": "Transactions: ",
+    "previousBlock": "Previous Block Hash"
+  },
+  "broadcast": {
+    "result": "Transaction has been successfully broadcasted. Thank you for using eosexplorer.app.",
+    "textarea": "Data",
+    "title": "Broadcast transaction"
+  },
+  "buttons": {
+    "auth": "Auth with Scatter",
+    "authBy": "Auth by %(link)s",
+    "cancel": "Cancel",
+    "hide": "Hide",
+    "proxy": "Set proxy",
+    "reload": "Reload page",
+    "send": "Send",
+    "showData": {
+      "hide": "Hide Data",
+      "show": "Show Data"
+    },
+    "showMore": "Show More %(additionalData)s",
+    "showAll": "Show All",
+    "toDashboard": "Go to dashboard",
+    "push": "Push",
+    "voted": "Vote"
+  },
+  "calculator": {
+    "canAfford": "I can afford",
+    "comment": {
+      "available": "available for %(title)s",
+      "for": "for %(title)s",
+      "of": "of %(title)s"
+    },
+    "currentlyHave": "My Available Funds",
+    "needToBuy": "My Resource requirements",
+    "perKiB": "per kB",
+    "priceItems": {
+      "cpu": "Cost to reserve 1 ms/day CPU Bandwidth",
+      "network": "Cost to reserve 1 kB/day Network Bandwidth",
+      "ram": "Cost to store 1 kB of data in RAM",
+      "title": "current %(title)s price"
+    },
+    "title": "Resource calculator",
+    "willCost": "It will cost"
+  },
+  "contracts": {
+    "title": "Contracts"
+  },
+  "dashboard": {
+    "account": "accounts",
+    "action": "actions",
+    "chainID": "chainID",
+    "collected": "Reserved %(ram)s Fund",
+    "fee": "%(ram)s fee collected",
+    "free": "%(ram)s free",
+    "used": "%(ram)s used",
+    "headBlock": "head block",
+    "irreversibleBlock": "Last Irreversible Block",
+    "marketcap": "marketcap (B): ",
+    "price": "price ($): ",
+    "produced": "Head Block Producer",
+    "reserved": "%(ram)s reserved",
+    "stacked": "Staked",
+    "supply": "Total supply",
+    "supplyRam": "%(ram)s Total supply",
+    "title": "Dashboard",
+    "transaction": "transactions",
+    "usage": "usage",
+    "voters": "voters",
+    "votingProgress": "Voting Stake Percentage",
+    "calculatorLink": "Calculate",
+    "ramPrice": "%(ram)s Price"
+  },
+  "emptyTable": {
+    "account": {
+      "filter": "Empty. Please, change filter options.",
+      "history": "User hasn't made any action.",
+      "prodList": "User hasn't voted yet.",
+      "votersList": "No one voted for this producer.",
+      "proxyTable": "No one voted for this proxy",
+      "controlledAccs": "Controlled account list is empty",
+      "createdAccs": "Created account list is empty"
+    },
+    "accounts": "Users not found",
+    "blockPage": "Transactions not found",
+    "bids": "Names not found",
+    "producers": {
+      "active": "There are no active producers right now!",
+      "disabled": "There are no disabled producers right now!",
+      "standby": "There are no standby producers right now!"
+    },
+    "proxies": "There are no proxies right now!",
+    "trx": {
+      "actionsTable": "Transaction isn't contain any action.",
+      "tokensTable": "Transaction isn't contain any transfers!"
+    }
+  },
+  "footer": {
+    "text": "Created by %(teamLink)s.\nIf you'd like to support us, vote %(prodLink)s as block producer",
+    "provided": "Api provided by %(links)s.",
+    "copyright": "© 2018 %(link)s All Rights Reserved"
+  },
+  "formErrors": {
+    "requiredParameter": "Required parameter \"%(param)s\" not found. Please add this param to JSON and ty again!",
+    "somethingWrong": "Something went wrong. Please, try again!"
+  },
+  "global": {
+    "loader": "Loading",
+    "notActualData": "Not actual"
+  },
+  "cookieWarning": {
+    "text": "We use cookies to improve your browsing experience on our website, only within the use of Google Analytics. \n To see which data Google collect and learn how to disable cookies, please see %(link)s.",
+    "link": "‌Privacy and Cookie Policy",
+    "btn": "Accept"
+  },
+  "graphDate": {
+    "Apr": "Apr %(day)s",
+    "Aug": "Aug %(day)s",
+    "Dec": "Dec %(day)s",
+    "Feb": "Feb %(day)s",
+    "Jan": "Jan %(day)s",
+    "Jul": "Jul %(day)s",
+    "Jun": "Jun %(day)s",
+    "Mar": "Mar %(day)s",
+    "May": "May %(day)s",
+    "Nov": "Nov %(day)s",
+    "Oct": "Oct %(day)s",
+    "Sep": "Sep %(day)s"
+  },
+  "graphTooltip": {
+    "caps": "Market cap (billions)",
+    "close": "close",
+    "open": "open",
+    "price": "Price (USD)",
+    "trxData": "TRX Count"
+  },
+  "header": {
+    "blocksList": "Blocks List: ",
+    "hintDesc": "To search transaction or block please enter full id or number. We found next coincidences: ",
+    "keysList": "User with such key: ",
+    "search": "Search by Block number/ID, TxID, Account, Public key, etc.",
+    "trxList": "Transactions List: ",
+    "usersList": "Users List: "
+  },
+  "hints": {
+    "error": "Nothing found. Please, try again."
+  },
+  "measures": {
+    "bytesList": {
+      "GB": "Gb",
+      "KB": "KB",
+      "MB": "MB",
+      "bytes": "bytes"
+    },
+    "bytesPerDayList": {
+      "GB/day": "GB/day",
+      "KB/day": "kB/day",
+      "MB/day": "MB/day",
+      "bytes/day": "bytes/day"
+    },
+    "daySecondsList": {
+      "ms/day": "ms/day",
+      "mu/day": "mu/day",
+      "s/day": "s/day"
+    },
+    "secondsList": {
+      "ms": "ms",
+      "mu": "mu",
+      "s": "s"
+    },
+    "tokensList": {
+      "EOS": "EOS",
+      "USD": "USD"
+    }
+  },
+  "keys": {
+    "activeKey": "Active Key",
+    "multisig": "Multisig",
+    "ownerKey": "Owner Key",
+    "producerKey": "Producer Key",
+    "producerSignature": "Producer Signature",
+    "trxMroot": "Transaction Mroot",
+    "actionMroot": "Action Mroot"
+  },
+  "menuOther": {
+    "anything": "anything else",
+    "title": "Other Project",
+    "voting": "voting tools",
+    "wallet": "myeoswallet.app"
+  },
+  "networkList": {
+    "deos": "DEOS",
+    "mainnet": "EOS MAINNET",
+    "testnet": "JUNGLE EOS TESTNET"
+  },
+  "notConnect": {
+    "subtitleFirst": "Try connect later",
+    "title": "Nodes is lost"
+  },
+  "notFound": {
+    "subtitleFirst": "Maybe you got a typo in the link here.",
+    "subtitleSecond": "Let's go to the dashboard",
+    "title": "Page not found"
+  },
+  "p2p": {
+    "title": "P2P"
+  },
+  "producers": {
+    "active": "Active Block Producers",
+    "disabled": "Defunct Block Producers",
+    "neverConfirmed": "Never confirmed",
+    "standby": "Standby Block Producers",
+    "title": "Block producers"
+  },
+  "proxies": {
+    "filter": "Only Show Registered",
+    "title": "Proxies"
+  },
+  "search": {
+    "bidder": "Bidder list",
+    "name": "New Name list",
+    "placeholder": {
+      "bid": "Search by bidder or bid name",
+      "default": "Enter value",
+      "producerTable": "Search producer by name",
+      "proxyTable": "Seacrh proxy by name"
+    }
+  },
+  "tableFilter": {
+    "filterSpam": "Hide transfers below ",
+    "removeAll": "Remove All",
+    "removeDoubles": "Hide operations doubles",
+    "removeSpam": "Hide spam",
+    "selectAll": "Select All",
+    "spamTitle": "Filter Spam Data",
+    "submit": "Accept Filter",
+    "typesTitle": "Filter By Type"
+  },
+  "tableHead": {
+    "actionCount": "Action Count",
+    "actions": "Actions",
+    "address": "Address",
+    "authorization": "Authorization",
+    "availability": "Availability",
+    "balance": "Balance",
+    "bidder": "Bidder",
+    "block": "Block #",
+    "checkbox": "",
+    "contract": "Contract",
+    "countVoters": "Voters",
+    "cpuUsage": "CPU Usage",
+    "createdBy": "Created By",
+    "createdTime": "Created time",
+    "creationDate": "Creation Date",
+    "currentSupply": "Current supply",
+    "dailyReward": "~ Daily Reward",
+    "dateCreate": "Date create",
+    "dateTime": "Date & Time",
+    "dateVerified": "Date Verified",
+    "decimalPoints": "Decimal points",
+    "eosVotes": "Total votes (EOS)",
+    "expiration": "Expiration",
+    "from": "From",
+    "highBid": "Highest bid",
+    "holders": "Holders",
+    "info": "Details",
+    "issued": "Issued by",
+    "key": "Key",
+    "keyAcc": "Keys/accounts",
+    "lastBid": "Last Bid",
+    "lastClaimTime": "Last claim time",
+    "lastConfirmedBlock": "Last confirmed block",
+    "lastVoteWeight": "Vote weight",
+    "location": "Location",
+    "maxSupply": "Max supply",
+    "name": "Name",
+    "netUsage": "NET Usage",
+    "num": "#",
+    "operationID": "TXID",
+    "parent": "Parent",
+    "percentVote": "Votes %",
+    "permission": "Permission",
+    "producers": "Producers",
+    "proxy": "Status",
+    "proxyVoteWeight": "Proxy vote weight",
+    "proxyEffectiveWeight": "Effective proxy vote weight",
+    "quantity": "Quantity",
+    "rank": "#",
+    "response": "Response Time",
+    "seq": "Sequence",
+    "slave": "Proxied Accounts",
+    "threshold": "Threshold",
+    "ticker": "Ticker",
+    "to": "To",
+    "totalVotes": "Total votes",
+    "transactionID": "Transaction ID",
+    "trxCount": "TRX Count",
+    "type": "Type",
+    "unpaidBlocks": "Unpaid blocks",
+    "url": "URL",
+    "version": "Version",
+    "votes": "Votes",
+    "weight": "Weight",
+    "votesForBP": "BP Votes",
+    "memo": "Memo"
+  },
+  "tabsHead": {
+    "actionsInfo": "Action Info",
+    "controlled": "Controlled accounts",
+    "created": "Created accounts",
+    "proxyUs": "Proxy received",
+    "rawData": "Raw Data",
+    "setProxy": "Set proxy",
+    "tokensTransfer": "Token Transfers",
+    "tracesInfo": "Traces Info",
+    "voteFor": "Votes Cast",
+    "voteForTroughProxy": "Votes cast through proxy",
+    "voteForProducer": "Vote for producers",
+    "voteUs": "Votes received"
+  },
+  "timeFilter": {
+    "all": "All",
+    "day": "Day",
+    "month": "Month",
+    "week": "Week",
+    "year": "Year"
+  },
+  "tokens": {
+    "title": "Tokens"
+  },
+  "tools": {
+    "title": "tools"
+  },
+  "tooltip": {
+    "effectiveVotes": "Vote weight with vote decay\n at current time",
+    "totalEffectiveVotes": "Your vote weight will be equal to this number, \nif you update your votes right now"
+  },
+  "transactions": {
+    "activity": {
+      "subtitle": "Number of Transactions over last 24 hours",
+      "title": "24H Acitivity"
+    },
+    "average": {
+      "subtitle": "Average number of transactions per 24 hours over last 7 days",
+      "title": "7D Activity"
+    },
+    "averageLive": {
+      "subtitle": "number of transactions per second",
+      "title": "Average"
+    },
+    "chartTabs": {
+      "live": "live",
+      "stats": "stats"
+    },
+    "current": {
+      "subtitle": "Number of transactions per second",
+      "title": "Current"
+    },
+    "liveGraph": {
+      "average": "AVG: %(average)s",
+      "current": "Current: %(current)s",
+      "max": "Max: %(max)s",
+      "title": "Live TPS",
+      "btn": "Live"
+    },
+    "max": {
+      "subtitle": " number of transactions per second",
+      "title": "Maximum"
+    },
+    "record": {
+      "subtitle": "Absolute transaction per 24 hours record",
+      "title": "Record"
+    },
+    "scheduleGraph": {
+      "title": "Average transactions per period",
+      "btn": "History"
+    },
+    "title": "Transactions",
+    "lastTrx": "Last Transactions",
+    "refresh": "Refresh",
+    "transactionActivity": "transaction activity"
+  },
+  "trxPage": {
+    "actions": "Actions",
+    "actionsNum": "Action Count",
+    "blockDate": "Validated",
+    "blockExp": "Expired",
+    "blockNum": "Block Number",
+    "cpuNum": "CPU usage",
+    "deferred": "Deferred by",
+    "netNum": "NET usage",
+    "status": {
+      "executed": "Executed",
+      "irreversible": "Irreversible",
+      "deferred": "Deferred",
+      "pending": "Pending %(timer)s",
+      "title": "Status"
+    },
+    "wait": "Awaiting",
+    "title": "Transaction"
+  },
+  "voting": {
+    "error": "Something wrong. Please try later",
+    "title": "Voting",
+    "trxMessage": "Your votes have been updated, check transaction at %(link)s",
+    "scatterDesc": "First, follow the link and install the Scatter extension\n\nThen, being in your right mind, log in to it by entering the private keys of your EOS account (instruction)\n\nNext, click on the authorization button to allow Scatter to perform operations from this site.",
+    "scatterLink": "Download Scatter"
+  }
+}

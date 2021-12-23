@@ -1,0 +1,238 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  padding: 16rem 0 0;
+  margin: 0;
+  width: 8rem;
+  height: 100%;
+  transition: $anim;
+  background-color: $sidebar_ground;
+  @include breakpoint(lg) {
+    //background-image: $grd_ground;
+    &__inner {
+      overflow-y: auto;
+      padding-bottom: 3rem;
+    }
+  }
+  @include breakpoint(md) {
+    padding-top: 8rem;
+    width: 0;
+    .social {
+      margin-top: 5rem;
+      padding: 0 2.5rem;
+
+      &__link {
+        min-width: auto;
+        width: 4rem;
+        height: 4rem;
+
+        svg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &:after, &:before, &__item {
+    width: 100%;
+  }
+
+  &:after, &:before {
+    content: '';
+  }
+
+  &:after {
+    flex: 1;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 3rem;
+    height: 6rem;
+    @include breakpoint(md) {
+      min-height: 6rem;
+    }
+    width: 100%;
+    //padding: 0 3rem;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $text_title;
+    cursor: pointer;
+
+    &.brand {
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 3rem;
+      height: auto;
+      font-size: 1.6rem;
+      color: $light;
+      margin-bottom: 2rem;
+      padding-bottom: 5px;
+
+      span {
+        transform: none !important;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    &.active, &:hover {
+      color: $light;
+      //mix-blend-mode: lighten;
+      svg path {
+        stroke: url(#active)
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        height: 2rem;
+        width: 4px;
+        background-image: $grd_main;
+        transform: scaleX(0);
+        transition: $anim;
+      }
+    }
+  }
+
+  &__text {
+    transition: $anim;
+    transform: translateX(2rem) scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+    width: 0;
+    white-space: nowrap;
+  }
+
+  &__ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+
+    svg {
+      height: 100%;
+
+      path {
+        stroke: $text_title;
+      }
+    }
+  }
+
+  .divider {
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+}
+
+.proxy-icon {
+  svg {
+    width: 2.5rem;
+    min-width: 2.5rem;
+    margin-left: -0.25rem;
+
+    path {
+      stroke-width: 3rem;
+    }
+  }
+}
+
+.burger {
+  position: fixed;
+  left: 0;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 8rem;
+  height: 8rem;
+  padding: 3rem;
+  border: none;
+  background-color: transparent;
+  transition: $anim/2;
+  cursor: pointer;
+  @include breakpoint(md) {
+    top: 0;
+  }
+
+  &:focus, &:active {
+    outline: none;
+  }
+
+  span {
+    display: inline-block;
+    width: 2rem;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $text_title;
+    opacity: 1;
+    transform: none;
+    transition: $anim/2;
+
+    &:nth-child(even) {
+      width: 1.6rem;
+      transform: translate3d(2px, 0, 0);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+#app.open-sidebar {
+  .menu {
+    width: 27rem;
+    background-color: $sidebar_open;
+
+    &__item {
+      &.active:after {
+        transform: scaleX(1);
+      }
+    }
+
+    &__text {
+      transform: translateX(2rem) scaleX(1);
+      opacity: 1;
+      width: auto;
+    }
+
+    .burger {
+      span:nth-child(even) {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @include breakpoint(lg) {
+      background-color: $dark_ground;
+    }
+
+    @include breakpoint(md) {
+      width: 50rem;
+      max-width: 100%;
+      .burger {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@for $i from 2 through 11 {
+  #app.open-sidebar .menu__item:nth-child(#{$i}) span {
+    transition-delay: 0.035s * $i;
+  }
+}

@@ -1,0 +1,38 @@
+.show-more{
+  button{
+    padding: 0;
+  }
+  .link--ghost{
+    text-decoration: underline;
+  }
+  &__text{
+    @include transition;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  &--open{
+    .show-more{
+      &__text{
+        margin: 1rem 0;
+        max-height: unset;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.show-btn{
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: $light;
+  cursor: pointer;
+  &:focus, &:hover{
+    outline: none;
+  }
+}

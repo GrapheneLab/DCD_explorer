@@ -1,0 +1,32 @@
+.tokens{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  &__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  &__symbol{
+    font-weight: bold;
+    @include textGradient($grd_main, #6076EC);
+  }
+  &__desc{
+    display: flex;
+    flex-direction: column;
+    .link--ghost{
+      font-size: 1.3rem;
+      color: $text_title;
+    }
+  }
+  &__amount{
+    margin-top: 1rem;
+  }
+  .key__ico{
+    img{
+      width: 85%;
+      border-radius: 4px;
+      height: auto;
+    }
+  }
+}

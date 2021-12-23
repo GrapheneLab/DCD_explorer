@@ -1,0 +1,83 @@
+.multisig{
+  height: 2rem;
+  width: 100%;
+  &:hover{
+    .dropdown {
+      &__title .title{
+        color: $text-title;
+      }
+    }
+  }
+  .dropdown {
+    &__title {
+      width: 100%;
+      padding: 0;
+      .title{
+        transition: $anim;
+        color: $light;
+      }
+    }
+    &__list {
+      //background-image: $grd_ground;
+      min-width: calc(100% + 4rem);
+      padding: 4rem 2rem 2rem;
+      border-radius: 0.4rem;
+      .table{
+        margin-bottom: 0;
+        &__wrapper {
+          margin: 0;
+        }
+      }
+    }
+  }
+  &__block{
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  &__threshold{
+    display: block;
+    margin: 2rem 0 0;
+    text-transform: uppercase;
+  }
+  &__key{}
+  &__perm{}
+  &__name{}
+  &__weight{}
+  .title{
+    //display: inline-flex;
+    //flex-direction: column;
+    //&:not(:last-child){
+    //  padding-right: 1rem;
+    //}
+    span{
+      color: $light;
+    }
+  }
+}
+
+.permission{
+  &__table{
+    span, a{
+      display: block;
+    }
+    .table__item:last-child{
+      span, a{
+        min-width: 250px;
+      }
+    }
+  }
+  &__modal{
+    height: auto;
+    .dropdown__list{
+      padding: 2rem !important;
+    }
+    .dropdown__title{
+      padding: 0;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+    .table__wrapper{
+      margin: 0 !important;
+    }
+  }
+}

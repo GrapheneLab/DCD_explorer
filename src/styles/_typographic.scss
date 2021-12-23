@@ -1,0 +1,134 @@
+.heading{
+  display: flex;
+  align-items: flex-end;
+  font-size: 3.6rem;
+  //white-space: nowrap;
+  color: $light;
+  margin: 0;
+  @include breakpoint(sm){
+    font-size: 2.4rem;
+  }
+}
+
+.title{
+  color: $text_title;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.text{
+  &--xlg{
+    font-size: 2rem;
+  }
+  &--lg{
+    font-size: 1.8rem;
+  }
+  &--md{
+    font-size: 1.4rem;
+  }
+  &--sm{
+    font-size: 1.3rem;
+  }
+  &--xs{
+    font-size: 1.2rem;
+  }
+  &--light{
+    color: $light;
+    -webkit-text-fill-color: $light;
+  }
+  &--grey{
+    color: $text_title;
+  }
+  &--success{
+    color: $text_success !important;
+  }
+  &--danger{
+    color: $text_danger !important;
+  }
+  &--accent{
+    color: $text_accent;
+  }
+  &--red{
+    background: -webkit-linear-gradient(#ECA360, #FA8879);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.wrap{
+  white-space: normal;
+  word-break: break-word;
+}
+
+.nowrap{
+  white-space: nowrap;
+}
+
+.link{
+  &__wrapper{
+    display: flex;
+    align-items: center;
+  }
+  &--ghost{
+    position: relative;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: $light;
+    cursor: pointer;
+    transition: $anim/2;
+    &:after, &:before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    &:before{
+      border-bottom: 1px dashed $light_op;
+    }
+    &:after{
+      height: 1px;
+      background-color: $accent2;
+      box-shadow: 0 0 5px $accent2_op;
+      transform: scaleX(0);
+      transition: $anim/2;
+    }
+    &:hover, &:focus{
+      outline: none;
+      &:after{
+        transform: scaleX(1);
+      }
+    }
+    &.card{
+      &:hover{
+        border: 1px solid $accent2;
+      }
+      &:before {
+        border: none;
+      }
+    }
+  }
+  &--hyperlink{
+    color: $accent2;
+    text-decoration-skip: ink;
+  }
+}
+
+button.link--ghost{
+  &:before{
+    border: none;
+  }
+}
+
+.tdu{
+  text-decoration: underline;
+}
+
+.upper{
+  text-transform: uppercase;
+}
+
+.lower{
+  text-transform: lowercase;
+}

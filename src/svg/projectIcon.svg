@@ -1,0 +1,33 @@
+<svg width="30" height="50" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0 4C0 1.79086 1.79086 0 4 0L46.7349 0C48.944 0 50.7349 1.79086 50.7349 4V46C50.7349 48.2091 48.944 50 46.7349 50H4C1.79086 50 0 48.2091 0 46L0 4Z"
+              transform="translate(0.470703 0.000854492)" fill="#485687" fill-opacity="0.09"/>
+        <path d="M0.5 4C0.5 2.067 2.067 0.5 4 0.5H46.7349C48.6679 0.5 50.2349 2.067 50.2349 4V46C50.2349 47.933 48.6679 49.5 46.7349 49.5H4C2.067 49.5 0.5 47.933 0.5 46V4Z"
+              transform="translate(0.470703 0.000854492)" stroke="white" stroke-opacity="0.03"/>
+        <g>
+            <g filter="url(#projectfilter1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" class="project-path"
+                      d="M0 14.4043C0 22.3596 6.5437 28.8086 14.616 28.8086C22.6882 28.8086 29.2319 22.3596 29.2319 14.4043C29.2319 6.44897 22.6882 0 14.616 0C6.5437 0 0 6.44897 0 14.4043ZM24.2776 14.4531C24.2776 19.6847 19.9741 23.9258 14.6655 23.9258C9.35718 23.9258 5.05371 19.6847 5.05371 14.4531C5.05371 9.22156 9.35718 4.98047 14.6655 4.98047C19.9741 4.98047 24.2776 9.22156 24.2776 14.4531Z"
+                      transform="translate(11.1729 10.5477)"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="grd_project-green" x2="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(0.00524688 -0.00516902) scale(29.232 28.8086) rotate(0.0205644)">
+            <stop stop-color="#58BCA6"/>
+            <stop offset="1" stop-color="#CAF956"/>
+        </linearGradient>
+        <linearGradient id="grd_project-blue" x2="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(0.00524688 -0.00516902) scale(29.232 28.8086) rotate(0.0205644)">
+            <stop stop-color="#3965F6"/>
+            <stop offset="1" stop-color="#76F3FD"/>
+        </linearGradient>
+        <linearGradient id="grd_project-orange" x2="1" gradientUnits="userSpaceOnUse"
+                        gradientTransform="translate(0.00524688 -0.00516902) scale(29.232 28.8086) rotate(0.0205644)">
+            <stop stop-color="#EC6080"/>
+            <stop offset="1" stop-color="#FADA79"/>
+        </linearGradient>
+    </defs>
+</svg>

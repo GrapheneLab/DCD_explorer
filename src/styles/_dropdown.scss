@@ -1,0 +1,172 @@
+.dropdown{
+  position: relative;
+  height: 4.2rem;
+  &.open{
+    .dropdown{
+      &__title, &__caret{
+         z-index: 3;
+       }
+      &__title{
+        background-color: transparent !important;
+      }
+      &__caret{
+        transform: rotate(180deg);
+      }
+      &__popup{
+        opacity: 1;
+        z-index: 90;
+        height: 100vh;
+        .dropdown{
+          &__list {
+            max-height: calc(100% - 2rem);
+            padding-top: 4rem;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 0.5rem;
+            background-color: $dark_ground;
+          }
+          &__item, &__item a{
+            line-height: 4rem;
+          }
+        }
+        .btn--close{
+          top: 0.5rem;
+          right: 0.5rem;
+        }
+      }
+      &__list{
+        z-index: 1;
+        opacity: 1;
+        height: fit-content;
+        transform: translate3d(0, 0, 0) scaleY(1);
+        background-color: $overlay_bg;
+        //box-shadow: 0 14px 20px $shadow;
+        filter: drop-shadow(0 14px 10px $overlay_shadow);
+        @supports (-webkit-overflow-scrolling: touch) {
+          height: auto;
+        }
+      }
+    }
+  }
+  &--operation .dropdown__list{
+    width: 70rem;
+    max-width: 100%;
+  }
+  &--bg{
+    .dropdown__title{
+      background-color: $card_ground;
+      border: 1px solid $card_border;
+    }
+  }
+  &--md{
+    min-width: 15rem;
+  }
+  &__caret{
+    margin-left: 2rem;
+    transition: $anim;
+  }
+  &__title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //min-width: 14.2rem;
+    height: 100%;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    user-select: none;
+    text-transform: uppercase;
+    transition: $anim;
+  }
+  &__popup, &__list{
+    z-index: -1;
+    opacity: 0;
+    list-style: none;
+    margin: 0;
+    transition: $anim;
+  }
+  &__popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    overflow: hidden;
+    background-color: $sidebar_open;
+    -webkit-overflow-scrolling: touch;
+    .dropdown__list{
+      position: relative;
+      min-width: auto;
+      top: auto;
+      left: auto !important;
+      right: auto !important;
+      //background-image: $grd_ground;
+      @include breakpoint(md){
+        max-width: 96%;
+      }
+      @include breakpoint(sm){
+        min-width: 90% !important;
+      }
+    }
+    .heading{
+      margin: 0 !important;
+    }
+  }
+  &__list{
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    width: auto;
+    max-width: 800px;
+    min-width: calc(100% + 4rem);
+    padding: 7rem 4rem 2rem;
+    background-color: transparent;
+    transform: translate3d(0, -50%, 0) scaleY(0);
+    &:after{
+      position: absolute;
+      top: 0;
+      z-index: 0;
+    }
+    .history-table__pre{
+      margin-top: 2rem;
+      padding: 2rem;
+      background: $card_ground;
+      border: 1px solid $card_border;
+    }
+  }
+  &__item, &__item a, &__item button{
+    display: block;
+    width: 100%;
+    color: $text-title;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+
+  &.icon{
+    .dropdown__title{
+      justify-content: center;
+      min-width: 4.2rem;
+      padding: 0;
+    }
+  }
+  &.right{
+    .dropdown__list{
+      left: auto;
+      right: -2rem;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+%switch{
+  &:before, &:after{
+    border-color: $light_op;
+    border-radius: 1.5rem;
+  }
+  &:before{
+    width: 2.5rem;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $light_op;
+    transform: translate3d(50%, -50%, 0);
+    transition: $anim;
+  }
+  .checkbox__label{
+    padding: 0 2rem 0 4rem;
+  }
+  &.checkbox--selected{
+    &:before, &:after{
+      border-color: $text_title;
+    }
+    &:after{
+      background-color: $text_title;
+      transform: translate3d(200%, -50%, 0);
+    }
+  }
+  &:active{
+    &:before{
+      animation: none;
+    }
+  }
+}
+
+%radio{
+  svg{
+    display: none;
+  }
+  &:after, &:before{
+    border-radius: 50%;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-color: $text_title;
+    opacity: 0;
+    transform: translate3d(-50%,-50%,0) scale(0.5);
+    transition: $anim/2;
+  }
+  &.checkbox--selected{
+    &:after{
+      top: 50%;
+      left: 0.9rem;
+      width: 1rem;
+      height: 1rem;
+      opacity: 1;
+      transform: translate3d(-50%,-50%,0) scale(1);
+    }
+  }
+}
+
+.checkbox{
+  display: block;
+  color: $text_title;
+  position: relative;
+  user-select: none;
+  margin: 1rem 0;
+  transition: $anim;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1.5px solid $text_title;
+    transform: translateY(-50%);
+    transition: $anim;
+  }
+  &:active{
+    &:before{
+      animation: scale .3s;
+    }
+  }
+  &:hover{
+    cursor: pointer;
+  }
+  input{
+    display: none;
+  }
+  svg{
+    position: absolute;
+    top: -2.5px;
+    left: -1px;
+    width: 2rem;
+    height: 2rem;
+  }
+  path{
+    stroke-width: 4px;
+    stroke-dasharray: 48px;
+    stroke-dashoffset: 48px;
+    transform-origin: 50% 50%;
+    stroke: $light;
+    transition: $anim;
+  }
+  &__label{
+    position: relative;
+    padding: 0 2rem 0 3rem;
+  }
+  &--selected{
+    color: $light;
+    path{
+      stroke-dashoffset: 0;
+    }
+    .checkbox__label{
+      &:before{
+        background: $card_ground;
+      }
+    }
+  }
+  &.switch{
+    @extend %switch;
+  }
+  &.radio{
+    @extend %radio;
+  }
+}
+
+.radio-table{
+  .checkbox{
+    @extend %radio;
+  }
+}

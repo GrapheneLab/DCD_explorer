@@ -1,0 +1,79 @@
+.input, .textarea{
+  &__field{
+    @include transition;
+    max-width: 100%;
+    display: block;
+    border: 1px solid $card_border;
+    color: $light;
+    &:hover, &:active, &:focus{
+      outline: none;
+      border-bottom: 1px solid #787cb2;
+      box-shadow: inset 0 0 5px hsla(0,0%,100%,.05);
+      caret-color: $light;
+    }
+    &:active, &:focus{
+      outline: 0;
+    }
+    &::-webkit-input-placeholder {
+      padding-left: 3px;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      padding-left: 3px;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      padding-left: 3px;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      padding-left: 3px;
+    }
+  }
+  &__error{
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    color: $accent1;
+  }
+}
+
+.input{
+  $this: &;
+  &__field{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    border-color: transparent transparent $card_border transparent;
+    background: transparent;
+    &:hover, &:active, &:focus{
+      box-shadow: unset;
+    }
+  }
+  &--disabled{
+    #{$this}{
+      &__field{
+        color: $text_title;
+        &:hover, &:active, &:focus{
+          border-bottom: 1px solid $card_border;
+          box-shadow: unset;
+        }
+      }
+    }
+  }
+}
+
+.textarea{
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+  &__field{
+    padding: 3.1rem 2.8rem;
+    background: $card_ground_opaque;
+  }
+}
+
+@keyframes scale {
+  50% {
+    width: 2rem;
+    height: 2rem;
+    transform: translate(-0.25rem, -50%);
+  }
+}

@@ -1,0 +1,89 @@
+<svg width="70" height="65" viewBox="0 0 70 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M41.4167 41.9153H5.87997C2.63762 41.9153 0 39.2777 0 36.0353V5.87997C0 2.63762 2.63762 0 5.87997 0H41.4164C44.6587 0 47.2964 2.63762 47.2964 5.87997V36.0356C47.2966 39.2777 44.659 41.9153 41.4167 41.9153ZM5.87997 3.91998C4.79936 3.91998 3.91998 4.7991 3.91998 5.87997V36.0356C3.91998 37.1164 4.79936 37.9956 5.87997 37.9956H41.4164C42.497 37.9956 43.3764 37.1164 43.3764 36.0356V5.87997C43.3764 4.7991 42.497 3.91998 41.4164 3.91998H5.87997Z" transform="translate(11.23 11.5417)" fill="url(#cpu_paint_0)"/>
+    <path d="M1.95999 14.9375C0.877552 14.9375 0 14.0599 0 12.9775V1.95999C0 0.877553 0.877552 0 1.95999 0C3.04243 0 3.91998 0.877553 3.91998 1.95999V12.9775C3.91998 14.0599 3.04243 14.9375 1.95999 14.9375Z" transform="translate(18.2793 0.303223)" fill="url(#cpu_paint_1)"/>
+    <path d="M1.95999 14.9375C0.877552 14.9375 0 14.0599 0 12.9775V1.95999C0 0.877553 0.877552 0 1.95999 0C3.04243 0 3.91998 0.877553 3.91998 1.95999V12.9775C3.91998 14.0599 3.04243 14.9375 1.95999 14.9375Z" transform="translate(28.0386 0.303223)" fill="url(#cpu_paint_2)"/>
+    <path d="M1.95999 14.9375C0.877552 14.9375 0 14.0599 0 12.9775V1.95999C0 0.877553 0.877552 0 1.95999 0C3.04243 0 3.91998 0.877553 3.91998 1.95999V12.9775C3.91998 14.0599 3.04243 14.9375 1.95999 14.9375Z" transform="translate(37.7983 0.303223)" fill="url(#cpu_paint_3)"/>
+    <path d="M1.95999 14.9375C0.877552 14.9375 0 14.0599 0 12.9775V1.95999C0 0.877553 0.877552 0 1.95999 0C3.04243 0 3.91998 0.877553 3.91998 1.95999V12.9775C3.91998 14.0599 3.04243 14.9375 1.95999 14.9375Z" transform="translate(47.5571 0.303223)" fill="url(#cpu_paint_4)"/>
+    <path d="M12.9772 3.91998H1.95999C0.877552 3.91998 0 3.04243 0 1.95999C0 0.877552 0.877552 0 1.95999 0H12.9772C14.0597 0 14.9372 0.877552 14.9372 1.95999C14.9372 3.04243 14.0597 3.91998 12.9772 3.91998Z" transform="translate(54.6069 15.9)" fill="url(#cpu_paint_5)"/>
+    <path d="M12.9772 3.91998H1.95999C0.877552 3.91998 0 3.04243 0 1.95999C0 0.877552 0.877552 0 1.95999 0H12.9772C14.0597 0 14.9372 0.877552 14.9372 1.95999C14.9372 3.04243 14.0597 3.91998 12.9772 3.91998Z" transform="translate(54.6064 25.6598)" fill="url(#cpu_paint_6)"/>
+    <path d="M12.9772 3.91998H1.95999C0.877552 3.91998 0 3.04243 0 1.95999C0 0.877552 0.877552 0 1.95999 0H12.9772C14.0597 0 14.9372 0.877552 14.9372 1.95999C14.9372 3.04243 14.0597 3.91998 12.9772 3.91998Z" transform="translate(54.6064 35.4192)" fill="url(#cpu_paint_7)"/>
+    <path d="M12.9772 3.91998H1.95999C0.877552 3.91998 0 3.04243 0 1.95999C0 0.877552 0.877552 0 1.95999 0H12.9772C14.0597 0 14.9372 0.877552 14.9372 1.95999C14.9372 3.04243 14.0597 3.91998 12.9772 3.91998Z" transform="translate(54.6064 45.1783)" fill="url(#cpu_paint_8)"/>
+    <path d="M12.9775 3.91998H1.95999C0.877552 3.91998 0 3.04243 0 1.95999C0 0.877552 0.877552 0 1.95999 0H12.9775C14.0599 0 14.9375 0.877552 14.9375 1.95999C14.9375 3.04243 14.0599 3.91998 12.9775 3.91998Z" transform="translate(0.154297 15.9)" fill="url(#cpu_paint_9)"/>
+    <path d="M12.9775 3.91998H1.95999C0.877552 3.91998 0 3.04243 0 1.95999C0 0.877552 0.877552 0 1.95999 0H12.9775C14.0599 0 14.9375 0.877552 14.9375 1.95999C14.9375 3.04243 14.0599 3.91998 12.9775 3.91998Z" transform="translate(0.154297 25.6598)" fill="url(#cpu_paint_10)"/>
+    <path d="M12.9775 3.91998H1.95999C0.877552 3.91998 0 3.04243 0 1.95999C0 0.877552 0.877552 0 1.95999 0H12.9775C14.0599 0 14.9375 0.877552 14.9375 1.95999C14.9375 3.04243 14.0599 3.91998 12.9775 3.91998Z" transform="translate(0.154297 35.4192)" fill="url(#cpu_paint_11)"/>
+    <path d="M12.9775 3.91998H1.95999C0.877552 3.91998 0 3.04243 0 1.95999C0 0.877552 0.877552 0 1.95999 0H12.9775C14.0599 0 14.9375 0.877552 14.9375 1.95999C14.9375 3.04243 14.0599 3.91998 12.9775 3.91998Z" transform="translate(0.154297 45.1783)" fill="url(#cpu_paint_12)"/>
+    <path d="M1.95999 14.9375C0.877552 14.9375 0 14.0599 0 12.9775V1.95999C0 0.877552 0.877552 0 1.95999 0C3.04243 0 3.91998 0.877552 3.91998 1.95999V12.9775C3.91998 14.0599 3.04243 14.9375 1.95999 14.9375Z" transform="translate(18.2793 49.8361)" fill="url(#cpu_paint_13)"/>
+    <path d="M1.95999 14.9375C0.877552 14.9375 0 14.0599 0 12.9775V1.95999C0 0.877552 0.877552 0 1.95999 0C3.04243 0 3.91998 0.877552 3.91998 1.95999V12.9775C3.91998 14.0599 3.04243 14.9375 1.95999 14.9375Z" transform="translate(28.0386 49.8361)" fill="url(#cpu_paint_14)"/>
+    <path d="M1.95999 14.9375C0.877552 14.9375 0 14.0599 0 12.9775V1.95999C0 0.877552 0.877552 0 1.95999 0C3.04243 0 3.91998 0.877552 3.91998 1.95999V12.9775C3.91998 14.0599 3.04243 14.9375 1.95999 14.9375Z" transform="translate(37.7983 49.8361)" fill="url(#cpu_paint_15)"/>
+    <path d="M1.95999 14.9375C0.877552 14.9375 0 14.0599 0 12.9775V1.95999C0 0.877552 0.877552 0 1.95999 0C3.04243 0 3.91998 0.877552 3.91998 1.95999V12.9775C3.91998 14.0599 3.04243 14.9375 1.95999 14.9375Z" transform="translate(47.5571 49.8361)" fill="url(#cpu_paint_16)"/>
+    <defs>
+        <linearGradient id="cpu_paint_0" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.881 49.9799) scale(48.4151 42.9067) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.482 17.8115) scale(4.0127 15.2908) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.482 17.8115) scale(4.0127 15.2908) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_3" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.482 17.8115) scale(4.0127 15.2908) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_4" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.482 17.8115) scale(4.0127 15.2908) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_5" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.64722 4.67419) scale(15.2905 4.0127) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_6" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.64722 4.67419) scale(15.2905 4.0127) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_7" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.64722 4.67419) scale(15.2905 4.0127) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_8" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.64722 4.67419) scale(15.2905 4.0127) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_9" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.64732 4.67419) scale(15.2908 4.0127) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_10" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.64732 4.67419) scale(15.2908 4.0127) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_11" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.64732 4.67419) scale(15.2908 4.0127) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_12" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.64732 4.67419) scale(15.2908 4.0127) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_13" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.482 17.8115) scale(4.0127 15.2908) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_14" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.482 17.8115) scale(4.0127 15.2908) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_15" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.482 17.8115) scale(4.0127 15.2908) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+        <linearGradient id="cpu_paint_16" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.482 17.8115) scale(4.0127 15.2908) rotate(-122.434)">
+            <stop stop-color="#843CF7"/>
+            <stop offset="1" stop-color="#38B8F2"/>
+        </linearGradient>
+    </defs>
+</svg>

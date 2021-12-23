@@ -1,0 +1,587 @@
+{
+  "account": {
+    "accountHistory": "crwdns256:0crwdne256:0",
+    "available": "crwdns260:0%(param)scrwdne260:0",
+    "avatar": "crwdns262:0crwdne262:0",
+    "balance": "crwdns264:0crwdne264:0",
+    "countVoteProducer": "crwdns19668:0%(count)scrwdne19668:0",
+    "createdBy": "crwdns268:0crwdne268:0",
+    "createdTime": "crwdns19670:0crwdne19670:0",
+    "decay": "crwdns272:0crwdne272:0",
+    "delegated": "crwdns274:0%(param)scrwdne274:0",
+    "delegatedFrom": "crwdns276:0%(number)scrwdnd276:0%(symbol)scrwdne276:0",
+    "delegatedTo": "crwdns278:0%(number)scrwdnd278:0%(symbol)scrwdne278:0",
+    "lastClaimTime": "crwdns19672:0%(lastClaimTime)scrwdne19672:0",
+    "limit": "crwdns282:0%(param)scrwdne282:0",
+    "liquid": "crwdns284:0crwdne284:0",
+    "maxWeight": "crwdns286:0crwdne286:0",
+    "none": "crwdns19674:0crwdne19674:0",
+    "permission": "crwdns294:0crwdne294:0",
+    "proxyCount": "crwdns19676:0crwdne19676:0",
+    "proxySet": "crwdns19678:0crwdne19678:0",
+    "proxyWeightEOS": "crwdns302:0crwdne302:0",
+    "proxyWeightTotal": "crwdns304:0crwdne304:0",
+    "refund": "crwdns19680:0%(timer)scrwdne19680:0",
+    "regaly": {
+      "contract": "crwdns308:0crwdne308:0",
+      "producer": "crwdns310:0crwdne310:0",
+      "proxy": "crwdns312:0crwdne312:0"
+    },
+    "resource": "crwdns19682:0crwdne19682:0",
+    "reward": "crwdns19684:0crwdne19684:0",
+    "selfDelegated": "crwdns318:0%(number)scrwdnd318:0%(symbol)scrwdne318:0",
+    "showKeys": "crwdns320:0crwdne320:0",
+    "site": "crwdns322:0crwdne322:0",
+    "staked": "crwdns324:0crwdne324:0",
+    "threshold": "crwdns326:0%(threshold)scrwdne326:0",
+    "title": "crwdns328:0crwdne328:0",
+    "unpaid": "crwdns330:0%(date)scrwdne330:0",
+    "used": "crwdns332:0%(param)scrwdne332:0",
+    "tokens": "crwdns19626:0crwdne19626:0",
+    "vote": "crwdns334:0crwdne334:0",
+    "voteFor": "crwdns336:0crwdne336:0",
+    "voteWeight": "crwdns338:0crwdne338:0",
+    "voteWeightEOS": "crwdns19526:0crwdne19526:0",
+    "voteWeightTotal": "crwdns19528:0crwdne19528:0",
+    "weight": "crwdns344:0%(weight)scrwdnd344:0%(symbol)scrwdne344:0",
+    "emptyVoting": {
+      "title": "crwdns19530:0crwdne19530:0",
+      "message": "crwdns19532:0%(link)scrwdne19532:0",
+      "link": "crwdns19534:0crwdne19534:0"
+    }
+  },
+  "accounts": {
+    "hintDesc": "crwdns346:0crwdne346:0",
+    "search": "crwdns348:0crwdne348:0",
+    "title": "crwdns350:0crwdne350:0"
+  },
+  "actionsList": {
+    "approve": {
+      "title": "crwdns352:0crwdne352:0"
+    },
+    "bidname": {
+      "text": "crwdns354:0%(bidder)scrwdnd354:0%(bid)scrwdnd354:0%(newname)scrwdne354:0",
+      "title": "crwdns356:0crwdne356:0"
+    },
+    "buyram": {
+      "text": "crwdns358:0%(from)scrwdnd358:0%(to)scrwdnd358:0%(summ)scrwdne358:0",
+      "title": "crwdns360:0crwdne360:0"
+    },
+    "buyrambytes": {
+      "text": "crwdns362:0%(from)scrwdnd362:0%(bytes)scrwdnd362:0%(to)scrwdne362:0",
+      "title": "crwdns364:0crwdne364:0"
+    },
+    "cancel": {
+      "title": "crwdns366:0crwdne366:0"
+    },
+    "claimrewards": {
+      "text": "crwdns368:0%(owner)scrwdne368:0",
+      "title": "crwdns370:0crwdne370:0"
+    },
+    "custom": {
+      "title": "crwdns372:0crwdne372:0"
+    },
+    "delegatebw": {
+      "text": "crwdns374:0%(from)scrwdnd374:0%(to)scrwdnd374:0%(netSumm)scrwdnd374:0%(cpuSumm)scrwdne374:0",
+      "title": "crwdns376:0crwdne376:0"
+    },
+    "deleteauth": {
+      "text": "crwdns378:0%(account)scrwdnd378:0%(permission)scrwdne378:0",
+      "title": "crwdns380:0crwdne380:0"
+    },
+    "exec": {
+      "title": "crwdns382:0crwdne382:0"
+    },
+    "issue": {
+      "text": "crwdns384:0%(to)scrwdnd384:0%(quantity)scrwdnd384:0%(memo)scrwdne384:0",
+      "title": "crwdns386:0crwdne386:0"
+    },
+    "linkauth": {
+      "title": "crwdns388:0crwdne388:0"
+    },
+    "newaccount": {
+      "text": "crwdns19640:0%(creator)scrwdnd19640:0%(name)scrwdne19640:0",
+      "title": "crwdns392:0crwdne392:0"
+    },
+    "propose": {
+      "title": "crwdns394:0crwdne394:0"
+    },
+    "receive": {
+      "text": "crwdns396:0%(from)scrwdnd396:0%(to)scrwdnd396:0%(summ)scrwdnd396:0%(memo)scrwdne396:0",
+      "title": "crwdns398:0crwdne398:0"
+    },
+    "refund": {
+      "text": "crwdns400:0%(owner)scrwdne400:0",
+      "title": "crwdns402:0crwdne402:0"
+    },
+    "regproducer": {
+      "text": "crwdns404:0%(producer)scrwdne404:0",
+      "title": "crwdns406:0crwdne406:0"
+    },
+    "regproxy": {
+      "text": "crwdns408:0%(proxy)scrwdne408:0",
+      "title": "crwdns410:0crwdne410:0"
+    },
+    "sellram": {
+      "text": "crwdns412:0%(account)scrwdnd412:0%(bytes)scrwdne412:0",
+      "title": "crwdns414:0crwdne414:0"
+    },
+    "sent": {
+      "text": "crwdns416:0%(from)scrwdnd416:0%(to)scrwdnd416:0%(summ)scrwdnd416:0%(memo)scrwdne416:0",
+      "title": "crwdns418:0crwdne418:0"
+    },
+    "transfer": {
+      "text": "crwdns420:0%(from)scrwdnd420:0%(to)scrwdnd420:0%(summ)scrwdnd420:0%(memo)scrwdne420:0",
+      "title": "crwdns422:0crwdne422:0"
+    },
+    "unapprove": {
+      "title": "crwdns424:0crwdne424:0"
+    },
+    "undelegatebw": {
+      "text": "crwdns19686:0%(from)scrwdnd19686:0%(to)scrwdnd19686:0%(netSumm)scrwdnd19686:0%(cpuSumm)scrwdne19686:0",
+      "title": "crwdns428:0crwdne428:0"
+    },
+    "unlinkauth": {
+      "text": "crwdns430:0%(account)scrwdnd430:0%(code)scrwdnd430:0%(type)scrwdne430:0",
+      "title": "crwdns432:0crwdne432:0"
+    },
+    "unregprod": {
+      "text": "crwdns434:0%(producer)scrwdne434:0",
+      "title": "crwdns436:0crwdne436:0"
+    },
+    "updateauth": {
+      "title": "crwdns438:0crwdne438:0"
+    },
+    "voteproducer": {
+      "empty": "crwdns440:0%(voter)scrwdne440:0",
+      "proxy": "crwdns442:0%(voter)scrwdnd442:0%(proxy)scrwdne442:0",
+      "text": "crwdns444:0%(voter)scrwdnd444:0%(producersList)scrwdne444:0",
+      "title": "crwdns446:0crwdne446:0"
+    }
+  },
+  "alert": {
+    "backendError": "crwdns19688:0crwdne19688:0"
+  },
+  "api": {
+    "title": "crwdns450:0crwdne450:0"
+  },
+  "bids": {
+    "emptyTable": "crwdns452:0crwdne452:0",
+    "hintDesc": "crwdns454:0crwdne454:0",
+    "search": "crwdns456:0crwdne456:0",
+    "title": "crwdns458:0crwdne458:0"
+  },
+  "blockPage": {
+    "actions": "crwdns460:0crwdne460:0",
+    "created": "crwdns19618:0crwdne19618:0",
+    "producedBy": "crwdns464:0crwdne464:0",
+    "title": "crwdns466:0%(num)scrwdne466:0",
+    "trx": "crwdns468:0crwdne468:0",
+    "previousBlock": "crwdns19690:0crwdne19690:0"
+  },
+  "broadcast": {
+    "result": "crwdns470:0crwdne470:0",
+    "textarea": "crwdns472:0crwdne472:0",
+    "title": "crwdns474:0crwdne474:0"
+  },
+  "buttons": {
+    "auth": "crwdns19692:0crwdne19692:0",
+    "authBy": "crwdns478:0%(link)scrwdne478:0",
+    "cancel": "crwdns480:0crwdne480:0",
+    "hide": "crwdns482:0crwdne482:0",
+    "proxy": "crwdns484:0crwdne484:0",
+    "reload": "crwdns486:0crwdne486:0",
+    "send": "crwdns488:0crwdne488:0",
+    "showData": {
+      "hide": "crwdns490:0crwdne490:0",
+      "show": "crwdns492:0crwdne492:0"
+    },
+    "showMore": "crwdns19694:0%(additionalData)scrwdne19694:0",
+    "showAll": "crwdns19628:0crwdne19628:0",
+    "toDashboard": "crwdns496:0crwdne496:0",
+    "push": "crwdns19608:0crwdne19608:0",
+    "voted": "crwdns498:0crwdne498:0"
+  },
+  "calculator": {
+    "canAfford": "crwdns500:0crwdne500:0",
+    "comment": {
+      "available": "crwdns19658:0%(title)scrwdne19658:0",
+      "for": "crwdns19660:0%(title)scrwdne19660:0",
+      "of": "crwdns504:0%(title)scrwdne504:0"
+    },
+    "currentlyHave": "crwdns19696:0crwdne19696:0",
+    "needToBuy": "crwdns19698:0crwdne19698:0",
+    "perKiB": "crwdns510:0crwdne510:0",
+    "priceItems": {
+      "cpu": "crwdns512:0crwdne512:0",
+      "network": "crwdns514:0crwdne514:0",
+      "ram": "crwdns19700:0crwdne19700:0",
+      "title": "crwdns518:0%(title)scrwdne518:0"
+    },
+    "title": "crwdns520:0crwdne520:0",
+    "willCost": "crwdns522:0crwdne522:0"
+  },
+  "contracts": {
+    "title": "crwdns524:0crwdne524:0"
+  },
+  "dashboard": {
+    "account": "crwdns19600:0crwdne19600:0",
+    "action": "crwdns19602:0crwdne19602:0",
+    "chainID": "crwdns530:0crwdne530:0",
+    "collected": "crwdns19702:0%(ram)scrwdne19702:0",
+    "fee": "crwdns19704:0%(ram)scrwdne19704:0",
+    "free": "crwdns19616:0%(ram)scrwdne19616:0",
+    "used": "crwdns19662:0%(ram)scrwdne19662:0",
+    "headBlock": "crwdns536:0crwdne536:0",
+    "irreversibleBlock": "crwdns538:0crwdne538:0",
+    "marketcap": "crwdns540:0crwdne540:0",
+    "price": "crwdns542:0crwdne542:0",
+    "produced": "crwdns19706:0crwdne19706:0",
+    "reserved": "crwdns19594:0%(ram)scrwdne19594:0",
+    "stacked": "crwdns19642:0crwdne19642:0",
+    "supply": "crwdns550:0crwdne550:0",
+    "supplyRam": "crwdns19596:0%(ram)scrwdne19596:0",
+    "title": "crwdns552:0crwdne552:0",
+    "transaction": "crwdns19604:0crwdne19604:0",
+    "usage": "crwdns556:0crwdne556:0",
+    "voters": "crwdns558:0crwdne558:0",
+    "votingProgress": "crwdns19708:0crwdne19708:0",
+    "calculatorLink": "crwdns19548:0crwdne19548:0",
+    "ramPrice": "crwdns19598:0%(ram)scrwdne19598:0"
+  },
+  "emptyTable": {
+    "account": {
+      "filter": "crwdns562:0crwdne562:0",
+      "history": "crwdns19552:0crwdne19552:0",
+      "prodList": "crwdns19554:0crwdne19554:0",
+      "votersList": "crwdns19556:0crwdne19556:0",
+      "proxyTable": "crwdns19558:0crwdne19558:0",
+      "controlledAccs": "crwdns19560:0crwdne19560:0",
+      "createdAccs": "crwdns19562:0crwdne19562:0"
+    },
+    "accounts": "crwdns566:0crwdne566:0",
+    "blockPage": "crwdns568:0crwdne568:0",
+    "bids": "crwdns19638:0crwdne19638:0",
+    "producers": {
+      "active": "crwdns570:0crwdne570:0",
+      "disabled": "crwdns572:0crwdne572:0",
+      "standby": "crwdns574:0crwdne574:0"
+    },
+    "proxies": "crwdns19630:0crwdne19630:0",
+    "trx": {
+      "actionsTable": "crwdns578:0crwdne578:0",
+      "tokensTable": "crwdns580:0crwdne580:0"
+    }
+  },
+  "footer": {
+    "text": "crwdns19710:0%(teamLink)scrwdnd19710:0%(prodLink)scrwdne19710:0",
+    "provided": "crwdns19634:0%(links)scrwdne19634:0",
+    "copyright": "crwdns19664:0%(link)scrwdne19664:0"
+  },
+  "formErrors": {
+    "requiredParameter": "crwdns586:0%(param)scrwdne586:0",
+    "somethingWrong": "crwdns588:0crwdne588:0"
+  },
+  "global": {
+    "loader": "crwdns590:0crwdne590:0",
+    "notActualData": "crwdns592:0crwdne592:0"
+  },
+  "cookieWarning": {
+    "text": "crwdns19564:0%(link)scrwdne19564:0",
+    "link": "crwdns19566:0crwdne19566:0",
+    "btn": "crwdns19568:0crwdne19568:0"
+  },
+  "graphDate": {
+    "Apr": "crwdns594:0%(day)scrwdne594:0",
+    "Aug": "crwdns596:0%(day)scrwdne596:0",
+    "Dec": "crwdns598:0%(day)scrwdne598:0",
+    "Feb": "crwdns600:0%(day)scrwdne600:0",
+    "Jan": "crwdns602:0%(day)scrwdne602:0",
+    "Jul": "crwdns604:0%(day)scrwdne604:0",
+    "Jun": "crwdns606:0%(day)scrwdne606:0",
+    "Mar": "crwdns608:0%(day)scrwdne608:0",
+    "May": "crwdns610:0%(day)scrwdne610:0",
+    "Nov": "crwdns612:0%(day)scrwdne612:0",
+    "Oct": "crwdns614:0%(day)scrwdne614:0",
+    "Sep": "crwdns616:0%(day)scrwdne616:0"
+  },
+  "graphTooltip": {
+    "caps": "crwdns618:0crwdne618:0",
+    "close": "crwdns620:0crwdne620:0",
+    "open": "crwdns622:0crwdne622:0",
+    "price": "crwdns624:0crwdne624:0",
+    "trxData": "crwdns626:0crwdne626:0"
+  },
+  "header": {
+    "blocksList": "crwdns628:0crwdne628:0",
+    "hintDesc": "crwdns630:0crwdne630:0",
+    "keysList": "crwdns632:0crwdne632:0",
+    "search": "crwdns19644:0crwdne19644:0",
+    "trxList": "crwdns636:0crwdne636:0",
+    "usersList": "crwdns638:0crwdne638:0"
+  },
+  "hints": {
+    "error": "crwdns640:0crwdne640:0"
+  },
+  "measures": {
+    "bytesList": {
+      "GB": "crwdns19646:0crwdne19646:0",
+      "KB": "crwdns644:0crwdne644:0",
+      "MB": "crwdns646:0crwdne646:0",
+      "bytes": "crwdns648:0crwdne648:0"
+    },
+    "bytesPerDayList": {
+      "GB/day": "crwdns650:0crwdne650:0",
+      "KB/day": "crwdns652:0crwdne652:0",
+      "MB/day": "crwdns654:0crwdne654:0",
+      "bytes/day": "crwdns656:0crwdne656:0"
+    },
+    "daySecondsList": {
+      "ms/day": "crwdns658:0crwdne658:0",
+      "mu/day": "crwdns660:0crwdne660:0",
+      "s/day": "crwdns662:0crwdne662:0"
+    },
+    "secondsList": {
+      "ms": "crwdns664:0crwdne664:0",
+      "mu": "crwdns666:0crwdne666:0",
+      "s": "crwdns668:0crwdne668:0"
+    },
+    "tokensList": {
+      "EOS": "crwdns670:0crwdne670:0",
+      "USD": "crwdns672:0crwdne672:0"
+    }
+  },
+  "keys": {
+    "activeKey": "crwdns19570:0crwdne19570:0",
+    "multisig": "crwdns19572:0crwdne19572:0",
+    "ownerKey": "crwdns19574:0crwdne19574:0",
+    "producerKey": "crwdns19576:0crwdne19576:0",
+    "producerSignature": "crwdns19578:0crwdne19578:0",
+    "trxMroot": "crwdns19580:0crwdne19580:0",
+    "actionMroot": "crwdns19582:0crwdne19582:0"
+  },
+  "menuOther": {
+    "anything": "crwdns674:0crwdne674:0",
+    "title": "crwdns676:0crwdne676:0",
+    "voting": "crwdns678:0crwdne678:0",
+    "wallet": "crwdns680:0crwdne680:0"
+  },
+  "networkList": {
+    "deos": "crwdns682:0crwdne682:0",
+    "mainnet": "crwdns684:0crwdne684:0",
+    "testnet": "crwdns686:0crwdne686:0"
+  },
+  "notConnect": {
+    "subtitleFirst": "crwdns688:0crwdne688:0",
+    "title": "crwdns690:0crwdne690:0"
+  },
+  "notFound": {
+    "subtitleFirst": "crwdns692:0crwdne692:0",
+    "subtitleSecond": "crwdns694:0crwdne694:0",
+    "title": "crwdns696:0crwdne696:0"
+  },
+  "p2p": {
+    "title": "crwdns698:0crwdne698:0"
+  },
+  "producers": {
+    "active": "crwdns19712:0crwdne19712:0",
+    "disabled": "crwdns19714:0crwdne19714:0",
+    "neverConfirmed": "crwdns704:0crwdne704:0",
+    "standby": "crwdns19716:0crwdne19716:0",
+    "title": "crwdns708:0crwdne708:0"
+  },
+  "proxies": {
+    "filter": "crwdns19718:0crwdne19718:0",
+    "title": "crwdns712:0crwdne712:0"
+  },
+  "search": {
+    "bidder": "crwdns714:0crwdne714:0",
+    "name": "crwdns716:0crwdne716:0",
+    "placeholder": {
+      "bid": "crwdns718:0crwdne718:0",
+      "default": "crwdns720:0crwdne720:0",
+      "producerTable": "crwdns19524:0crwdne19524:0",
+      "proxyTable": "crwdns19610:0crwdne19610:0"
+    }
+  },
+  "tableFilter": {
+    "filterSpam": "crwdns726:0crwdne726:0",
+    "removeAll": "crwdns728:0crwdne728:0",
+    "removeDoubles": "crwdns730:0crwdne730:0",
+    "removeSpam": "crwdns732:0crwdne732:0",
+    "selectAll": "crwdns734:0crwdne734:0",
+    "spamTitle": "crwdns736:0crwdne736:0",
+    "submit": "crwdns738:0crwdne738:0",
+    "typesTitle": "crwdns740:0crwdne740:0"
+  },
+  "tableHead": {
+    "actionCount": "crwdns19720:0crwdne19720:0",
+    "actions": "crwdns744:0crwdne744:0",
+    "address": "crwdns746:0crwdne746:0",
+    "authorization": "crwdns748:0crwdne748:0",
+    "availability": "crwdns750:0crwdne750:0",
+    "balance": "crwdns752:0crwdne752:0",
+    "bidder": "crwdns754:0crwdne754:0",
+    "block": "crwdns19722:0crwdne19722:0",
+    "checkbox": "crwdns758:0crwdne758:0",
+    "contract": "crwdns760:0crwdne760:0",
+    "countVoters": "crwdns762:0crwdne762:0",
+    "cpuUsage": "crwdns764:0crwdne764:0",
+    "createdBy": "crwdns19724:0crwdne19724:0",
+    "createdTime": "crwdns768:0crwdne768:0",
+    "creationDate": "crwdns19726:0crwdne19726:0",
+    "currentSupply": "crwdns772:0crwdne772:0",
+    "dailyReward": "crwdns19728:0crwdne19728:0",
+    "dateCreate": "crwdns776:0crwdne776:0",
+    "dateTime": "crwdns778:0crwdne778:0",
+    "dateVerified": "crwdns780:0crwdne780:0",
+    "decimalPoints": "crwdns782:0crwdne782:0",
+    "eosVotes": "crwdns784:0crwdne784:0",
+    "expiration": "crwdns786:0crwdne786:0",
+    "from": "crwdns788:0crwdne788:0",
+    "highBid": "crwdns19650:0crwdne19650:0",
+    "holders": "crwdns792:0crwdne792:0",
+    "info": "crwdns19730:0crwdne19730:0",
+    "issued": "crwdns796:0crwdne796:0",
+    "key": "crwdns798:0crwdne798:0",
+    "keyAcc": "crwdns800:0crwdne800:0",
+    "lastBid": "crwdns802:0crwdne802:0",
+    "lastClaimTime": "crwdns804:0crwdne804:0",
+    "lastConfirmedBlock": "crwdns806:0crwdne806:0",
+    "lastVoteWeight": "crwdns808:0crwdne808:0",
+    "location": "crwdns810:0crwdne810:0",
+    "maxSupply": "crwdns812:0crwdne812:0",
+    "name": "crwdns814:0crwdne814:0",
+    "netUsage": "crwdns816:0crwdne816:0",
+    "num": "crwdns818:0crwdne818:0",
+    "operationID": "crwdns19652:0crwdne19652:0",
+    "parent": "crwdns822:0crwdne822:0",
+    "percentVote": "crwdns824:0crwdne824:0",
+    "permission": "crwdns826:0crwdne826:0",
+    "producers": "crwdns828:0crwdne828:0",
+    "proxy": "crwdns19732:0crwdne19732:0",
+    "proxyVoteWeight": "crwdns832:0crwdne832:0",
+    "proxyEffectiveWeight": "crwdns19666:0crwdne19666:0",
+    "quantity": "crwdns834:0crwdne834:0",
+    "rank": "crwdns19734:0crwdne19734:0",
+    "response": "crwdns838:0crwdne838:0",
+    "seq": "crwdns840:0crwdne840:0",
+    "slave": "crwdns842:0crwdne842:0",
+    "threshold": "crwdns844:0crwdne844:0",
+    "ticker": "crwdns846:0crwdne846:0",
+    "to": "crwdns848:0crwdne848:0",
+    "totalVotes": "crwdns850:0crwdne850:0",
+    "transactionID": "crwdns852:0crwdne852:0",
+    "trxCount": "crwdns854:0crwdne854:0",
+    "type": "crwdns856:0crwdne856:0",
+    "unpaidBlocks": "crwdns858:0crwdne858:0",
+    "url": "crwdns860:0crwdne860:0",
+    "version": "crwdns862:0crwdne862:0",
+    "votes": "crwdns864:0crwdne864:0",
+    "weight": "crwdns866:0crwdne866:0",
+    "votesForBP": "crwdns19736:0crwdne19736:0",
+    "memo": "crwdns19636:0crwdne19636:0"
+  },
+  "tabsHead": {
+    "actionsInfo": "crwdns19738:0crwdne19738:0",
+    "controlled": "crwdns870:0crwdne870:0",
+    "created": "crwdns872:0crwdne872:0",
+    "proxyUs": "crwdns874:0crwdne874:0",
+    "rawData": "crwdns876:0crwdne876:0",
+    "setProxy": "crwdns878:0crwdne878:0",
+    "tokensTransfer": "crwdns19740:0crwdne19740:0",
+    "tracesInfo": "crwdns882:0crwdne882:0",
+    "voteFor": "crwdns19742:0crwdne19742:0",
+    "voteForTroughProxy": "crwdns19744:0crwdne19744:0",
+    "voteForProducer": "crwdns886:0crwdne886:0",
+    "voteUs": "crwdns888:0crwdne888:0"
+  },
+  "timeFilter": {
+    "all": "crwdns890:0crwdne890:0",
+    "day": "crwdns892:0crwdne892:0",
+    "month": "crwdns894:0crwdne894:0",
+    "week": "crwdns896:0crwdne896:0",
+    "year": "crwdns898:0crwdne898:0"
+  },
+  "tokens": {
+    "title": "crwdns900:0crwdne900:0"
+  },
+  "tools": {
+    "title": "crwdns902:0crwdne902:0"
+  },
+  "tooltip": {
+    "effectiveVotes": "crwdns904:0crwdne904:0",
+    "totalEffectiveVotes": "crwdns906:0crwdne906:0"
+  },
+  "transactions": {
+    "activity": {
+      "subtitle": "crwdns19746:0crwdne19746:0",
+      "title": "crwdns19748:0crwdne19748:0"
+    },
+    "average": {
+      "subtitle": "crwdns19750:0crwdne19750:0",
+      "title": "crwdns19752:0crwdne19752:0"
+    },
+    "averageLive": {
+      "subtitle": "crwdns19654:0crwdne19654:0",
+      "title": "crwdns918:0crwdne918:0"
+    },
+    "chartTabs": {
+      "live": "crwdns920:0crwdne920:0",
+      "stats": "crwdns922:0crwdne922:0"
+    },
+    "current": {
+      "subtitle": "crwdns924:0crwdne924:0",
+      "title": "crwdns926:0crwdne926:0"
+    },
+    "liveGraph": {
+      "average": "crwdns928:0%(average)scrwdne928:0",
+      "current": "crwdns930:0%(current)scrwdne930:0",
+      "max": "crwdns932:0%(max)scrwdne932:0",
+      "title": "crwdns934:0crwdne934:0",
+      "btn": "crwdns19584:0crwdne19584:0"
+    },
+    "max": {
+      "subtitle": "crwdns19612:0crwdne19612:0",
+      "title": "crwdns19754:0crwdne19754:0"
+    },
+    "record": {
+      "subtitle": "crwdns19756:0crwdne19756:0",
+      "title": "crwdns942:0crwdne942:0"
+    },
+    "scheduleGraph": {
+      "title": "crwdns19758:0crwdne19758:0",
+      "btn": "crwdns19760:0crwdne19760:0"
+    },
+    "title": "crwdns946:0crwdne946:0",
+    "lastTrx": "crwdns19540:0crwdne19540:0",
+    "refresh": "crwdns19542:0crwdne19542:0",
+    "transactionActivity": "crwdns948:0crwdne948:0"
+  },
+  "trxPage": {
+    "actions": "crwdns950:0crwdne950:0",
+    "actionsNum": "crwdns19762:0crwdne19762:0",
+    "blockDate": "crwdns19764:0crwdne19764:0",
+    "blockExp": "crwdns956:0crwdne956:0",
+    "blockNum": "crwdns958:0crwdne958:0",
+    "cpuNum": "crwdns960:0crwdne960:0",
+    "deferred": "crwdns962:0crwdne962:0",
+    "netNum": "crwdns964:0crwdne964:0",
+    "status": {
+      "executed": "crwdns966:0crwdne966:0",
+      "irreversible": "crwdns968:0crwdne968:0",
+      "deferred": "crwdns19588:0crwdne19588:0",
+      "pending": "crwdns19632:0%(timer)scrwdne19632:0",
+      "title": "crwdns970:0crwdne970:0"
+    },
+    "wait": "crwdns19624:0crwdne19624:0",
+    "title": "crwdns972:0crwdne972:0"
+  },
+  "voting": {
+    "error": "crwdns974:0crwdne974:0",
+    "title": "crwdns976:0crwdne976:0",
+    "trxMessage": "crwdns978:0%(link)scrwdne978:0",
+    "scatterDesc": "crwdns19620:0crwdne19620:0",
+    "scatterLink": "crwdns19622:0crwdne19622:0"
+  }
+}
